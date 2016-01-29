@@ -14,6 +14,10 @@ Test your knowledge with this slick trivia application and brag to your friends 
 [Link to User Stories and work flow!](https://trello.com/b/vB8o3tY8)
 ---
 
+
+##Wire Frames:
+
+![wireframe picture for first half of game](file:///Users/claire/Documents/wireframe1.JPG)![wireframe for second half of game](file:///Users/claire/Documents/wireframe2.JPG)
 ## Rough Draft of Questions:
 1. “Thank you for publishing this list. Such factual ammunition, conveniently at our fingertips, is just the thing we need.”  
 This is a(n):    
