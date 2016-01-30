@@ -7,7 +7,8 @@ console.log("main.js loaded!");
 
 // //1 player; 20 questions/potential correct;
 // //3 incorrect answers; 4 winner categories
-
+var openQuestions = [];
+var closedQuestions = [];
 // // var incorrectAns = 0
 // // var correctAns = 0
 // // var player = 0
