@@ -1,71 +1,49 @@
-#Misandry: The Trivia Game
+a description of your game ([Use Your Game's Name])
+lists and explanations of the technologies used (Technologies),
+the design approach taken (Design),
+installation instructions (Get Started), and
+unsolved problems and/or planned features (Next Steps).
+The code for a working game, built by you, ho
+
+#Misandry...The Trivia Game!
 
 How much do you really know about misandry? 
 
-Now you will test your knowledge thanks to this multiple choice & true/false trivia game! 
+Test your knowledge with this trivia game! 
 
-You will have three opportunities to answer incorrectly before the game is over, at which point you will receive your score- what category do you fall into?
+You will be asked a series of multiple choice & true/false questions about all things misandry. Do you feel confident? Great! But beware, you only have three opportunities to answer incorrectly before the game is over, at which point you will receive your score- what category do you fall into;
 
-Are you a full-on FemiNazi? An honorary MRA member? Or perhaps a female chauvanist?
+Are you a full-on FemiNazi? An honorary Mens Right Activist? Or perhaps a female chauvanist?
 
-Test your knowledge with this slick trivia application and brag to your friends about how much you know about the manifestation of man hate.
+Test your knowledge with this slick trivia application and brag to your friends about how much you know about the manifestation of man hate! :-)
 
-## Trello Board w Flow/User Stories
-[Link to User Stories and work flow!](https://trello.com/b/vB8o3tY8)
+#Technologies Used:
 ---
+- HTML
+- CSS
+- JavaScript
+- jQuery
+
+#Design Approach
+---
+The design for Misandry..The Trivia Game! is heavily influenced by this t-shirt, which I recieved as a birthday gift from a dear friend: 
+
+![a tishirt with a big pink heart on the front with 'Misandry' printed inside of it](file:///Users/claire/code/Project01_MisandryTrivia/assets/tee%20logo.jpg)
+
+The font on this shirt reminds me of one of my favorite childhood toys; more specifically, it brings to mind the font used for the Barbie brand:
+
+![Barbie logo](file:///Users/claire/code/Project01_MisandryTrivia/assets/barbie.font.png)
 
 
-##Wire Frames:
+The color pallet and font informed all of the design choices; from the background art, to the font color, to the logo design.
 
-![wireframe picture for first half of game](file:///Users/claire/Documents/wireframe1.JPG)![wireframe for second half of game](file:///Users/claire/Documents/wireframe2.JPG)
-## Rough Draft of Questions:
-1. “Thank you for publishing this list. Such factual ammunition, conveniently at our fingertips, is just the thing we need.”  
-This is a(n):    
+#Installation Instructions
 
-  A. comment left on an article about female only programs
-  
-  B. Text from a friend who provided you with a list of local libraries  
-  
-  C. Olivia Pope's response to obtaining important information about an adversary
-  
-  D. Letter to the editor of a local newspaper regarding a recent article tips to deal with a bed bug infestation
+#Next Steps
 
-2. "Take the red pill" is a phrase often used by this group of people:
 
-  A. Huge fans of The Matrix
-  
-  B. Licensed medical professionals
-  
-  C. Mens Rights Advocates (MRAs)
-  
-  D. All of the above
-  
-3. "Game" is the ultimate set of techniques and attitudes that enable male pick-up artists to seduce almost any woman they want.
-
-	True
-
-	False
-
-4. The "manosphere" refers to:
-
-	A. A magical land where men have equal rights as women
-	
-	B. The secret space program designed by feminists that will launch into space all men left after the apoalypse
-
-	C. A layer of ozone in the Earth's atmosphere consisting of Old Spice products
-
-	D. Online blogs, message boards and other sites frequented by MRAs
-
-5. "Incel" is a term used to describe:
-
-	A. The prototype for the Intel Pentium Processor
-
-	B. An identity adopted by dateless men; short for involuntarily celibate
-	
-	C. The prison men are trapped in in our society
-	
-	D. A shade of purple used primarily in the Color Harmony formula 
-      
+## Check out my Trello Board w/ User Stories
+[Link to User Stories and work flow!](https://trello.com/b/vB8o3tY8)
 ---
 
 #Resources:
