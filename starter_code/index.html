@@ -3,30 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <title>Misandry...The Trivia Game!</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <link rel="stylesheet" href="css/main.css">
 </head>
-<body id="body">
+<body>
+
+<section id="main">
 
   <div class="header">
-  <h1>Hey buddy!</h1>
+  <h1>Misandry...The Trivia Game!</h1>
   </div>
 
   <div class="Container">
 
-    <div class="question container">
-      <div id="image"></div>
-      <div id="gif"></div>
+    <div class="questionContainer">
+
+     <h4 id="prompt"></h4>
+
+     <h4 id="winnerCategory1"></h4>
+     <h4 id="winnerCategory2"></h4>
+     <h4 id="winnerCategory3"></h4>
+     <h4 id="winnerCategory4"></h4>
+
+     <div id="winnerExplain1"></div>
+     <div id="winnerExplain2"></div>
+     <div id="winnerExplain3"></div>
+     <div id="winnerExplain4"></div>
+
+     <div id="options">
 
       <div class="buttons">
-      <button type="Start"></button>
-      <button type="True"></button>
-      <button type="False"></button>
+      <button id="Start"></button>
+      <button id="reStart"></button>
+      <button id="answerTrue" class="answer"></button>
+      <button id="answerFalse" class="choice"></button>
+      <button id="answerA" class="answer"></button>
+      <button id="answerB" class="answer"></button>
+      <button id="answerC" class="answer"></button>
+      <button id="answerD" class="answer"></button>
       </div>
 
     </div>
 
-  </div>
+      <div id="image" class="correct"></div>
+      <div id="gif" class="incorrect"></div>
 
+
+
+    </div>
+
+  </div>
+</section>
 <script src="js/main.js"></script>
 </body>
 </html>

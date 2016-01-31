@@ -1,7 +1,72 @@
 html,
 body {
-  text-align: center;
+  /*text-align: center;
   font-family: Barbie;
   font-size: 28pt;
+  color: #FD67DF;*/
+  background-image: url("file:///Users/claire/code/Project01_MisandryTrivia/assets/background.jpg");
+  display: flex;
+}
+
+body>div {
+  flex-wrap: nowrap;
+}
+
+.Container *{
+  flex-wrap: nowrap;
+  text-align: center;
+  justify-content: center;
+  border: 1px solid #FD67DF;
+  background-color: white;
+
+}
+
+.header {
+  text-align: center;
+  font-family: Barbie;
+  font-size: 18;
   color: #FD67DF;
+  max-height: 75px;
+  padding: 10px 10px;
+  background-color: green;
+  border-radius: 20px;
+  max-width: 90%;
+}
+
+.questionContainer {
+  display: flex;
+  border: 1px solid #FD67DF;
+  margin: 10px auto;
+  padding: 25px 25px;
+  max-width: 90%;
+  max-height: 800px;
+  background-color: yellow;
+
+}
+
+#image {
+  display: flex;
+  border: 1px solid #FD67DF;
+  margin: 0 auto;
+  position: relative;
+  padding: 5px 5px;
+  max-width: 150px;
+  max-height: 100px;
+  background-color: blue;
+}
+
+#gif {
+
+}
+
+.buttons {
+  display: flex;
+  border: 1px solid #FD67DF;
+  margin: 0 auto;
+  max-width: 50px;
+  max-height: 20px;
+  position: relative;
+  padding: 2px 2px;
+  background-color: red;
+
 }
