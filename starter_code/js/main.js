@@ -1,16 +1,15 @@
 console.log("main.js loaded!");
 
-var $questions = $(document.selectElementById('questions'));
+var $questions = $(document.getElementById('questions'));
 
-push("yes")$questions;
-
-var questions = [
-{question: '"Thank you for publishing this list. Such factual ammunition,
-conveniently at our fingertips, is just the thing we need.”  This is a(n):'},
-{choices: [“a”, “b”, “c”, “d”, "a"]}
+var $questions = [
+// {'prompt': '"Thank you for publishing this list. Such factual ammunition,
+// conveniently at our fingertips, is just the thing we need.”  This is a(n):'},
 ];
+var options= ["a", "b", "c", "d"]
 
-var answers = (questions[1][4]);
+var answer = (questions[] + options[]);
+
 var userAnswers =
   ["A. comment left on an article about female only programs",
 
