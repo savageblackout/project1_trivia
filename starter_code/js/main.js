@@ -1,194 +1,202 @@
 console.log("main.js loaded!");
 
+var $questions = $(document.selectElementById('questions'));
 
-//MODEL: Data model******
+push("yes")$questions;
 
-//the data that underlies each "move" of the game…
+var questions = [
+{question: '"Thank you for publishing this list. Such factual ammunition,
+conveniently at our fingertips, is just the thing we need.”  This is a(n):'},
+{choices: [“a”, “b”, “c”, “d”, "a"]}
+];
 
-//1 player; 20 questions total.
-//2 game options; 10 questions per each game option;
-//4 winner categories based on answers
+var answers = (questions[1][4]);
+var userAnswers =
+  ["A. comment left on an article about female only programs",
 
-var count = 0
-var gameType1
-var gameType2
+  "B. Text from a friend who provided you with a list of local
+  libraries",
 
-//State of the Game:
-//How questions are chosen, where they go
-var openQuestions = [0, 1, 2, 3, 4, 5,
-                    6, 7, 8, 9, 10, 11,
-                    12, 13, 14, 15, 16,
-                    17, 18, 19, 20];
+  "C. Olivia Pope's response to obtaining important information about
+  an adversary",
 
-var closedQuestions = [];
+  "D. Letter to the editor of a local newspaper regarding a recent
+  article on tips to deal with a bed bug infestation"]
 
-var player = 0
+  var playerChoice {
+    document.selectElementById('a', 'b', 'c', 'd')
+            .addEventListener('on-click', checkAnswer())
+  }
 
-
-//Winner categories and descriptions
-
-var $winningCategory1 = $('#winnerCategory1');
-var $winningCategory2 = $('#winnerCategory1');
-var $winningCategory3 = $('#winnerCategory1');
-var $winningCategory4 = $('#winnerCategory1');
-
-$('#winningCategory1') = "Official Mens Rights Activist";
-$('#winningCategory2') = "Frequent 'Red Pill' Reddit Contributor";
-$('#winningCategory3') = "Female Chauvanist";
-$('#winningCategory4') = "FemiNazi";
-
-var $winnerExplain1 = $('#winnerExplain1');
-var $winnerExplain2 = $('#winnerExplain2');
-var $winnerExplain3 = $('#winnerExplain3');
-var $winnerExplain4 = $('#winnerExplain4');
-
-$('#winnerExplain1') = "wow! time to look up the local MRA chapter";
-$('#winnerExplain2') = "well done. you know your stuff, but you could stand to do some studying";
-$('#winnerExplain3') = "whoa! pump the brakes buddy. get to know the male struggle";
-$('#winnerExplain4') = "GTFOH with your 'feminist' propaganda! No man is safe with you around";
-
-//Start the game
-
-var initGame = function(){
-
-}
-
-var restartGame = function(){
-  initGame{
+  var checkAnswer = function{
 
   }
-}
 
 
-//winning conditions…
+// var questions = [
+// {question: '“Thank you for publishing this list. Such factual ammunition, conveniently at our fingertips, is just the thing we need.”  This is a(n):',
+//  choices: [“a”, “b”, “c”, “d”, “d”]
 
+// var answers = [question[5]];
 
-if (correctAns > 15 && correctAns < 20){
-  winningCategory1();
-  return
-  console.log("WINNER 1!");
-  } else if (correctAns < 15 && correctAns > 10) {
-  winningCategory2();
-  return
-  console.log("WINNER 2!");
-} else if (correctAns < 10 && correctAns > 5) {
-  winningCategory3;
-  return
-  console.log("WINNER 3!");
-} else if (correctAns < 5 && correctAns > 0){
-  winningCategory4();
-  return
-  console.log("WINNER 4!")
-}
+//   [$answerA: "A. comment left on an article about female only programs",
 
+//   $answerB: "vaB. Text from a friend who provided you with a list of local libraries",
 
+//   $answerC: "C. Olivia Pope's response to obtaining important information about an adversary",
 
-// //game states or modes…
-//states: title screen, questions screen: 1- multiple choice 2-t/f,
-//score screen (after each "click" event on a question screen),
-//end screen
+//   $answerD: "D. Letter to the editor of a local newspaper regarding a recent article tips to deal with a bed bug infestation",
 
+//   $answer: "A. comment left on an article about female only programs"],
+//   }, {$prompt: '"Take the red pill" is a phrase often used by this group of people:'
+//   $options:
+//   [$answerA: 'A. Huge fans of The Matrix',
+//   $answerB: 'B. Licensed medical professionals',
+//   $answerC: 'C. Mens Rights Advocates (MRAs)',
+//   $answerD: 'D. All of the above',
+//   $answer: 'D. All of the above']}
+//   }]
 
-// //the process of rendering:
+// //MODEL: Data model******
 
+// var questionCount = 0
+// var openQuestions = [0, 1, 2, 3, 4, 5,
+//                     6, 7, 8, 9];
+// var closedQuestions = [];
+// var totalQuestions = $('.questions').size();
+// var currentQuestion = 0;
+// $('.option').change(function(){
+//     var answer = ($(this).attr('value'))
+//     var question = ($(this).attr('name'))
+//     answers[question] = answer
 
-// //when will you render?
+// var initGame = function(){
+//   $options.addEventListener("click", returnAnswer()){
+//     if ($options == $answer){
+//       correctAns();
+//       questionCount ++;
+//       $questions.hide();
+//       $($questions.get(currentQuestion)).fadeIn();
 
-//title screen, question screen at question pop-up and
-//after click-event- score will pop-up
-//at end screen - final score and winner category provided
-//back to title screen
-//
+//       console.log("yay!");
+//     }else{
+//        incorrectAns();
+//        returnQuestion();
+//        console.log("boo!");
+//     }
+//   }
 
-// //when you render, what do you need to know?
-
-//if player has chosen to play the game
-//which box the player clicked
-//the value of this button
-//the total player score
-//if the player chooses to retart the game
-
-
-// //how will you render? What structures might ease that?
-
-//display will need to be set to 'hidden' for several divs
-//jQuery will help with the behaviors (would like to make the
-  //div pop-ups animated)
-
-
-
-// // Global Variables
+//   }
 
 
 
-// //State of the board
+// };
+
+// returnQuestion = function() {
+
+// };
+
+// var correctAns = function(){
+
+// }
+// var incorrectAns = function(){
+
+// }
+// //Winner categories and descriptions
+
+// var $winningCategory1 = $('#winnerCategory1');
+// var $winningCategory2 = $('#winnerCategory1');
+// var $winningCategory3 = $('#winnerCategory1');
+// var $winningCategory4 = $('#winnerCategory1');
+
+// $('#winningCategory1') = "Official Mens Rights Activist";
+// $('#winningCategory2') = "Frequent 'Red Pill' Reddit Contributor";
+// $('#winningCategory3') = "Female Chauvanist";
+// $('#winningCategory4') = "FemiNazi";
+
+// var $winnerExplain1 = $('#winnerExplain1');
+// var $winnerExplain2 = $('#winnerExplain2');
+// var $winnerExplain3 = $('#winnerExplain3');
+// var $winnerExplain4 = $('#winnerExplain4');
+
+// $('#winnerExplain1') = "wow! time to look up the local MRA chapter";
+// $('#winnerExplain2') = "well done. you know your stuff, but you could stand to do some studying";
+// $('#winnerExplain3') = "whoa! pump the brakes buddy. get to know the male struggle";
+// $('#winnerExplain4') = "GTFOH with your 'feminist' agenda! No man is safe with you around";
+
+// //Start the game
+
+// var pickRandomQuestion = function (){
+//   var randomIndex = Math.floor(Math.random() * openQuestions.length);
+//   var splicedValue = openQuestions.splice(randomIndex, 1);
+//   return splicedValue[0];
+// };
+
+// var restartGame = function(){
+//   initGame(){
+
+//   }
+// }
+
+// //winning conditions…
 
 
-
-// //State of the game
-
+// // if (correctAns > 15 && correctAns < 20){
+// //   winningCategory1();
+// //   return $('#winningCategory1'), $('#winnerExplain1')
+// //   console.log("WINNER 1!");
+// //   } else if (correctAns < 15 && correctAns > 10) {
+// //   winningCategory2();
+// //   return
+// //   console.log("WINNER 2!");
+// // } else if (correctAns < 10 && correctAns > 5) {
+// //   winningCategory3;
+// //   return
+// //   console.log("WINNER 3!");
+// // } else if (correctAns < 5 && correctAns > 0){
+// //   winningCategory4();
+// //   return
+// //   console.log("WINNER 4!")
+// // }
 
 // //Console helper: Print the state!
 
-var printState = function() {
-  if (gameLost) {
-    console.log("YOU SUCK!")
-  }
-}
-// /*MODEL: Game Behavior**********
+// var printState = function() {
+//   if (winningCategory1) {
+//     console.log("GREAT JOB!");
+//   } else if(winningCategory2) {
+//     console.log("GOOD JOB!");
+//   } else if (winningCategory3) {
+//     console.log("OK JOB!");
+//   } else (winningCategory4) {
+//     console.log("MEH JOB!");
+//   }
+// }
 
-var questions = [
-{"prompt": '“Thank you for publishing this list. Such factual ammunition, conveniently at our fingertips, is just the thing we need.”
-This is a(n):',
-"options": "  A. comment left on an article about female only programs
+// });
 
-  B. Text from a friend who provided you with a list of local libraries
-
-  C. Olivia Pope's response to obtaining important information about an adversary
-
-  D. Letter to the editor of a local newspaper regarding a recent article tips to deal with a bed bug infestation",
-  "answer": "A. comment left on an article about female only programs"
-}];
-
-var $prompt = $('#prompt'),
-var $options = $('#options'),
-var $answer = $('.answer'),
-
-var questionStart = function(){
-  document.addEventListener("click", function(){
-
-  })
-};
+// // /*MODEL: Game Behavior**********
 
 
-var pickRandomQuestion = function (){
-  var randomIndex = Math.floor(Math.random() * openQuestions.length);
-  var splicedValue = openQuestions.splice(randomIndex, 1);
-  return splicedValue[0];
-};
+// // /*Helper Methods*******************
+
+// // //Screen render
+
+
+// // /* VIEW: Render******************
 
 
 
-// /*Helper Methods*******************
-
-// //Screen render
+// // /*Interaction: User-initiated handlers*********
 
 
-// /* VIEW: Render******************
+// // /*Interaction: Other gameplay functions******
 
 
 
-// /*Interaction: User-initiated handlers*********
+// // /* Start up **********
 
+// // //Global variables
+// // //DOM functions
 
-// /*Interaction: Other gameplay functions******
-
-
-
-// /* Start up **********
-
-// //Global variables
-
-// //DOM functions
-
-// //Start the game!
+// // //Start the game!

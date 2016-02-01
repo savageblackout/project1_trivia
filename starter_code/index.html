@@ -1,60 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Misandry...The Trivia Game!</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-
-<section id="main">
-
-  <div class="header">
-  <h1>Misandry...The Trivia Game!</h1>
-  </div>
-
-  <div class="Container">
-
-    <div class="questionContainer">
-
-     <h4 id="prompt"></h4>
-
-     <h4 id="winnerCategory1"></h4>
-     <h4 id="winnerCategory2"></h4>
-     <h4 id="winnerCategory3"></h4>
-     <h4 id="winnerCategory4"></h4>
-
-     <div id="winnerExplain1"></div>
-     <div id="winnerExplain2"></div>
-     <div id="winnerExplain3"></div>
-     <div id="winnerExplain4"></div>
-
-     <div id="options">
-
-      <div class="buttons">
-      <button id="Start"></button>
-      <button id="reStart"></button>
-      <button id="answerTrue" class="answer"></button>
-      <button id="answerFalse" class="choice"></button>
-      <button id="answerA" class="answer"></button>
-      <button id="answerB" class="answer"></button>
-      <button id="answerC" class="answer"></button>
-      <button id="answerD" class="answer"></button>
+  <head>
+    <meta charset="UTF-8">
+    <title>Misandry...The Trivia Game!</title>
+    <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+      <link rel="stylesheet" href="css/main.css">
+    <meta charset="utf-8">
+    </head>
+  <body>
+  <h1 id="header">Misandry</h1>
+  <div id="quizContainer">
+    <div id="questions"></div>
+      <div class="choices">
+      <form>
+      <div id="a"><input type=radio name="something"></div><br>
+      <div id="b"><input type=radio name="something"></div><br>
+      <div id="c"><input type=radio name="something"></div><br>
+      <div id="d"><input type=radio name="something"></div><br>
+      </form>
       </div>
-
-    </div>
-
-      <div id="image" class="correct"></div>
-      <div id="gif" class="incorrect"></div>
-
-
-
-    </div>
-
+        <div id="images">
+        <img src="http://pngimg.com/upload/pumpkin_PNG9366.png">
+        </div>
   </div>
-</section>
-<script src="js/main.js"></script>
+  <button id="restart">Restart</button>
+  <button id="next">Next</button>
 </body>
+<script src="js/main.js"></script>
 </html>

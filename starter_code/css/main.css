@@ -1,72 +1,140 @@
-html,
+/*html,
 body {
-  /*text-align: center;
-  font-family: Barbie;
-  font-size: 28pt;
-  color: #FD67DF;*/
   background-image: url("file:///Users/claire/code/Project01_MisandryTrivia/assets/background.jpg");
-  display: flex;
+  background-size: cover;
+
 }
 
-body>div {
-  flex-wrap: nowrap;
-}
-
-.Container *{
-  flex-wrap: nowrap;
+.Container {
+  position: relative;
   text-align: center;
-  justify-content: center;
   border: 1px solid #FD67DF;
-  background-color: white;
+  background-color: rgba(255,228,255,0.5);
+  margin: 50px auto;
+  height: 500px;
+  max-width: 90%;
+  border-radius: 10px;
 
 }
 
 .header {
   text-align: center;
+  position: relative;
   font-family: Barbie;
+  margin: 20px auto;
   font-size: 18;
   color: #FD67DF;
-  max-height: 75px;
+  height: 75px;
   padding: 10px 10px;
-  background-color: green;
-  border-radius: 20px;
+  background-color: rgba(255,228,255,0.5);
+  border-radius: 10px;
   max-width: 90%;
 }
 
 .questionContainer {
-  display: flex;
+  text-align: center;
+  position: relative;
   border: 1px solid #FD67DF;
-  margin: 10px auto;
-  padding: 25px 25px;
+  margin: 50px auto;
+  padding: 50px 25px;
   max-width: 90%;
-  max-height: 800px;
-  background-color: yellow;
+  height: 420px;
+  background-color: rgba(255,228,255,0.5);
+  border-radius: 10px;
 
 }
-
-#image {
-  display: flex;
+#prompt {
+  font-family: Barbie;
+  font-size: 18pt;
+  color:#FD67DF;
+  text-align: center;
+  /*display: block;*/
+  position: relative;
   border: 1px solid #FD67DF;
   margin: 0 auto;
-  position: relative;
-  padding: 5px 5px;
-  max-width: 150px;
-  max-height: 100px;
-  background-color: blue;
-}
-
-#gif {
-
-}
-
-.buttons {
-  display: flex;
-  border: 1px solid #FD67DF;
-  margin: 0 auto;
-  max-width: 50px;
-  max-height: 20px;
-  position: relative;
   padding: 2px 2px;
-  background-color: red;
+  background-color: rgba(255,228,255,0.5);
+  height: 200px;
+  width: 600px;
+  border-radius: 10px;*/
+body {
+  background-image: url("file:///Users/claire/code/Project01_MisandryTrivia/assets/background.jpg");
+  background-size: cover;
+  }
 
+h1 {
+  text-align: center;
+  margin-top: 10px;
+  color: #FD67DF;
+  font-family: Barbie;
+  }
+
+#quizContainer {
+  border: 3px solid #FD67DF;
+  padding: 15px;
+  padding-top: 50px;
+  height: 600px;
+  top: 50%;
+
+  }
+
+#questions {
+  border-style: dashed;
+  padding: 20px;
+  text-align: center;
+  color: #FD67DF;
+  }
+
+.choices {
+  border: 15px;
+  padding-top: 20px;
+  float: left;
+  width: 50%;
+  margin-top: 40px;
+  color: #FD67DF;
+  }
+
+#a {
+  border-style: solid;
+  padding: 10px;
+  width: 65%;
+  clear: both;
+  }
+
+#b {
+  border-style: solid;
+  padding: 10px;
+  width: 65%;
+  clear: both;
+  }
+
+#c {
+  border-style: solid;
+  padding: 10px;
+  width: 65%;
+  clear: both;
+  }
+
+#d {
+  border-style: solid;
+  padding: 10px;
+  width: 65%;
+  clear: both;
+  }
+ #images img {
+  float: right;
+  width: 35%;
+  }
+
+/* #images
+{
+  height:200px;
+  width:200px;
+  float: right;
+  max-width: 20%;
 }
+
+ #images img {
+  max-width: 20%;
+  float: right;
+}*/

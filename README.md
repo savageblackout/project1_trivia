@@ -11,7 +11,7 @@ How much do you really know about misandry?
 
 Test your knowledge with this trivia game! 
 
-You will be asked a series of multiple choice & true/false questions about all things misandry. Do you feel confident? Great! But beware, you only have three opportunities to answer incorrectly before the game is over, at which point you will receive your score- what category do you fall into;
+You will be asked a series of multiple choice & true/false questions about all things misandry, after which point you will receive your score- what category do you fall into;
 
 Are you a full-on FemiNazi? An honorary Mens Right Activist? Or perhaps a female chauvanist?
 
