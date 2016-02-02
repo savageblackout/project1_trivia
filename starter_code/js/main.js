@@ -1,36 +1,50 @@
 console.log("main.js loaded!");
 
+
+/* MODEL Data *********************************************************/
+var questions = [
+  {
+    question:        "'Thank you for publishing this list. Such factual ammunition, conveniently at our fingertips, is just the thing we need.'  This is a(n):",
+    // options:         ["a", "b", "c", "d"],
+    type:            "options",
+    correctAnswer:   "a",
+    possibleAnswers: [
+      "comment left on an article about female only programs",
+      "Text from a friend who provided you with a list of local libraries",
+      "Olivia Pope's response to obtaining important information about an adversary",
+      "Letter to the editor of a local newspaper regarding a recent article on tips to deal with a bed bug infestation"
+    ]
+  },
+  {
+    question:      "Is this an example true or false question?",
+    // options:       ["true", "false"],
+    type:          "true/false",
+    correctAnswer: "true"
+  }
+];
+
+/* MODEL Behavior *****************************************************/
+
+var checkAnswer = function() {
+
+};
+
+
+/* VIEW ELEMENTS ******************************************************/
+
 var $questions = $(document.getElementById('questions'));
 
 var $questions = [
 // {'prompt': '"Thank you for publishing this list. Such factual ammunition,
 // conveniently at our fingertips, is just the thing we need.”  This is a(n):'},
 ];
-var options= ["a", "b", "c", "d"]
 
-var answer = (questions[] + options[]);
+var playerChoice = function() {
+  document.selectElementById('a', 'b', 'c', 'd')
+          .addEventListener('on-click', checkAnswer())
+};
 
-var userAnswers =
-  ["A. comment left on an article about female only programs",
-
-  "B. Text from a friend who provided you with a list of local
-  libraries",
-
-  "C. Olivia Pope's response to obtaining important information about
-  an adversary",
-
-  "D. Letter to the editor of a local newspaper regarding a recent
-  article on tips to deal with a bed bug infestation"]
-
-  var playerChoice {
-    document.selectElementById('a', 'b', 'c', 'd')
-            .addEventListener('on-click', checkAnswer())
-  }
-
-  var checkAnswer = function{
-
-  }
-
+/* DEAD CODE **********************************************************/
 
 // var questions = [
 // {question: '“Thank you for publishing this list. Such factual ammunition, conveniently at our fingertips, is just the thing we need.”  This is a(n):',
