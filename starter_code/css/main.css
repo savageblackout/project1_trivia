@@ -126,6 +126,10 @@ h1 {
   width: 35%;
   }
 
+
+.hidden {
+  display: none;
+}
 /* #images
 {
   height:200px;
