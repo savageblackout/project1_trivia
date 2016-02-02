@@ -39,9 +39,11 @@ var questionNumber = 0;
 
 /* MODEL Behavior *****************************************************/
 
-// var checkAnswer = function() {
+var checkAnswer = function() {
 
-// };
+};
+
+/* CLICK START BUTTON PAGE TRANSITION *******************************/
 
 $('#start').on('click', function(evt) {
     console.log(evt, this);
