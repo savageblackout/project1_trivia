@@ -4,24 +4,24 @@ console.log("main.js loaded!");
 /* MODEL Data *********************************************************/
 var questions = [
   {
-    question:        "'Thank you for publishing this list. Such factual ammunition, conveniently at our fingertips, is just the thing we need.'  This is a(n):",
-    // options:         ["a", "b", "c", "d"],
-    type:            "options",
-    correctAnswer:   "a",
-    possibleAnswers: [
-      "comment left on an article about female only programs",
+    prompt:  "'Thank you for publishing this list. Such factual ammunition, conveniently at our fingertips, is just the thing we need.'  This is a(n):",
+    type:    "options",
+    answer:  "a",
+    options: [
+      "Comment left on an article about female only programs",
       "Text from a friend who provided you with a list of local libraries",
       "Olivia Pope's response to obtaining important information about an adversary",
       "Letter to the editor of a local newspaper regarding a recent article on tips to deal with a bed bug infestation"
     ]
   },
   {
-    question:      "Is this an example true or false question?",
-    // options:       ["true", "false"],
-    type:          "true/false",
-    correctAnswer: "true"
+    prompt: "Is this an example true or false question?",
+    type:   "true/false",
+    answer: "true"
   }
 ];
+
+var questionNumber = 0;
 
 /* MODEL Behavior *****************************************************/
 
@@ -43,6 +43,30 @@ var playerChoice = function() {
   document.selectElementById('a', 'b', 'c', 'd')
           .addEventListener('on-click', checkAnswer())
 };
+
+
+var render = function() {
+  // 1. identify the information we need
+  var currentQuestion = questions[questionNumber];
+
+  // 2. identify where it goes
+  var $questionBox = $('#questions');
+  var $answerA = $('#a span');
+  var $answerB = $('#b span');
+  var $answerC = $('#c span');
+  var $answerD = $('#d span');
+
+  // 3. put it there
+  $questionBox.text(currentQuestion.prompt);
+  $answerA.text(currentQuestion.options[0]);
+  $answerB.text(currentQuestion.options[1]);
+  $answerC.text(currentQuestion.options[2]);
+  $answerD.text(currentQuestion.options[3]);
+};
+
+/* STARTUP ************************************************************/
+
+render();
 
 /* DEAD CODE **********************************************************/
 
