@@ -1,65 +1,6 @@
-/*html,
 body {
-  background-image: url("file:///Users/claire/code/Project01_MisandryTrivia/assets/background.jpg");
-  background-size: cover;
-
-}
-
-.Container {
-  position: relative;
-  text-align: center;
-  border: 1px solid #FD67DF;
-  background-color: rgba(255,228,255,0.5);
-  margin: 50px auto;
-  height: 500px;
-  max-width: 90%;
-  border-radius: 10px;
-
-}
-
-.header {
-  text-align: center;
-  position: relative;
-  font-family: Barbie;
-  margin: 20px auto;
-  font-size: 18;
-  color: #FD67DF;
-  height: 75px;
-  padding: 10px 10px;
-  background-color: rgba(255,228,255,0.5);
-  border-radius: 10px;
-  max-width: 90%;
-}
-
-.questionContainer {
-  text-align: center;
-  position: relative;
-  border: 1px solid #FD67DF;
-  margin: 50px auto;
-  padding: 50px 25px;
-  max-width: 90%;
-  height: 420px;
-  background-color: rgba(255,228,255,0.5);
-  border-radius: 10px;
-
-}
-#prompt {
-  font-family: Barbie;
-  font-size: 18pt;
-  color:#FD67DF;
-  text-align: center;
-  /*display: block;*/
-  position: relative;
-  border: 1px solid #FD67DF;
-  margin: 0 auto;
-  padding: 2px 2px;
-  background-color: rgba(255,228,255,0.5);
-  height: 200px;
-  width: 600px;
-  border-radius: 10px;*/
-body {
-  background-image: url("file:///Users/claire/code/Project01_MisandryTrivia/assets/background.jpg");
-  background-size: cover;
+/*  background-image: url("file:///Users/claire/code/Project01_MisandryTrivia/assets/background.jpg");
+*/  background-size: cover;
   }
 
 h1 {
@@ -130,15 +71,4 @@ h1 {
 .hidden {
   display: none;
 }
-/* #images
-{
-  height:200px;
-  width:200px;
-  float: right;
-  max-width: 20%;
-}
 
- #images img {
-  max-width: 20%;
-  float: right;
-}*/

@@ -1,11 +1,10 @@
 console.log("main.js loaded!");
-
+ $(document).ready(function(){
 
 /* MODEL Data *********************************************************/
 var questions = [
   {
     prompt:  "'Thank you for publishing this list. Such factual ammunition, conveniently at our fingertips, is just the thing we need.'  This is a(n):",
-    type:    "options",
     answer:  "a",
     options: [
       "Comment left on an article about female only programs",
@@ -15,35 +14,45 @@ var questions = [
     ]
   },
   {
-    prompt: "Is this an example true or false question?",
-    type:   "true/false",
-    answer: "true"
-  }
+    prompt: "'Take the red pill' is a phrase often used by this group of people:",
+    answer: "d",
+    options: [
+    "Huge fans of The Matrix",
+    "Licensed medical professionals",
+    "Mens Rights Advocates (MRAs)",
+    "All of the above"
+    ]
+  },
+  {
+    prompt: "The 'manosphere' refers to:",
+    answer: "d",
+    options: [
+    "A magical land where men have equal rights as women",
+    "The secret space program designed by feminists that will launch into space all men left after the apocalypse",
+    "A layer of ozone in the Earth's atmosphere consisting of Old Spice products",
+    "Online blogs, message boards and other sites frequented by MRAs"
+    ]
+  },
 ];
 
 var questionNumber = 0;
 
 /* MODEL Behavior *****************************************************/
 
-var checkAnswer = function() {
+// var checkAnswer = function() {
 
-};
+// };
+
+$('#start').on('click', function(evt) {
+    console.log(evt, this);
+    $('#title-container').addClass('hidden');
+    $('#quizContainer').removeClass('hidden');
+  });
 
 
 /* VIEW ELEMENTS ******************************************************/
 
 var $questions = $(document.getElementById('questions'));
-
-var $questions = [
-// {'prompt': '"Thank you for publishing this list. Such factual ammunition,
-// conveniently at our fingertips, is just the thing we need.”  This is a(n):'},
-];
-
-var playerChoice = function() {
-  document.selectElementById('a', 'b', 'c', 'd')
-          .addEventListener('on-click', checkAnswer())
-};
-
 
 var render = function() {
   // 1. identify the information we need
@@ -56,7 +65,7 @@ var render = function() {
   var $answerC = $('#c span');
   var $answerD = $('#d span');
 
-  // 3. put it there
+ // 3. put it there
   $questionBox.text(currentQuestion.prompt);
   $answerA.text(currentQuestion.options[0]);
   $answerB.text(currentQuestion.options[1]);
@@ -65,80 +74,19 @@ var render = function() {
 };
 
 /* STARTUP ************************************************************/
+// var checkAnswer = function() {
+//   if (currentQuestion === currentQuestion.answer){
+//     render();
+//   } else {
+//     alert("wrong");
+//   }
+// };
 
 render();
+});
 
 /* DEAD CODE **********************************************************/
 
-// var questions = [
-// {question: '“Thank you for publishing this list. Such factual ammunition, conveniently at our fingertips, is just the thing we need.”  This is a(n):',
-//  choices: [“a”, “b”, “c”, “d”, “d”]
-
-// var answers = [question[5]];
-
-//   [$answerA: "A. comment left on an article about female only programs",
-
-//   $answerB: "vaB. Text from a friend who provided you with a list of local libraries",
-
-//   $answerC: "C. Olivia Pope's response to obtaining important information about an adversary",
-
-//   $answerD: "D. Letter to the editor of a local newspaper regarding a recent article tips to deal with a bed bug infestation",
-
-//   $answer: "A. comment left on an article about female only programs"],
-//   }, {$prompt: '"Take the red pill" is a phrase often used by this group of people:'
-//   $options:
-//   [$answerA: 'A. Huge fans of The Matrix',
-//   $answerB: 'B. Licensed medical professionals',
-//   $answerC: 'C. Mens Rights Advocates (MRAs)',
-//   $answerD: 'D. All of the above',
-//   $answer: 'D. All of the above']}
-//   }]
-
-// //MODEL: Data model******
-
-// var questionCount = 0
-// var openQuestions = [0, 1, 2, 3, 4, 5,
-//                     6, 7, 8, 9];
-// var closedQuestions = [];
-// var totalQuestions = $('.questions').size();
-// var currentQuestion = 0;
-// $('.option').change(function(){
-//     var answer = ($(this).attr('value'))
-//     var question = ($(this).attr('name'))
-//     answers[question] = answer
-
-// var initGame = function(){
-//   $options.addEventListener("click", returnAnswer()){
-//     if ($options == $answer){
-//       correctAns();
-//       questionCount ++;
-//       $questions.hide();
-//       $($questions.get(currentQuestion)).fadeIn();
-
-//       console.log("yay!");
-//     }else{
-//        incorrectAns();
-//        returnQuestion();
-//        console.log("boo!");
-//     }
-//   }
-
-//   }
-
-
-
-// };
-
-// returnQuestion = function() {
-
-// };
-
-// var correctAns = function(){
-
-// }
-// var incorrectAns = function(){
-
-// }
 // //Winner categories and descriptions
 
 // var $winningCategory1 = $('#winnerCategory1');
@@ -175,42 +123,7 @@ render();
 //   }
 // }
 
-// //winning conditions…
 
-
-// // if (correctAns > 15 && correctAns < 20){
-// //   winningCategory1();
-// //   return $('#winningCategory1'), $('#winnerExplain1')
-// //   console.log("WINNER 1!");
-// //   } else if (correctAns < 15 && correctAns > 10) {
-// //   winningCategory2();
-// //   return
-// //   console.log("WINNER 2!");
-// // } else if (correctAns < 10 && correctAns > 5) {
-// //   winningCategory3;
-// //   return
-// //   console.log("WINNER 3!");
-// // } else if (correctAns < 5 && correctAns > 0){
-// //   winningCategory4();
-// //   return
-// //   console.log("WINNER 4!")
-// // }
-
-// //Console helper: Print the state!
-
-// var printState = function() {
-//   if (winningCategory1) {
-//     console.log("GREAT JOB!");
-//   } else if(winningCategory2) {
-//     console.log("GOOD JOB!");
-//   } else if (winningCategory3) {
-//     console.log("OK JOB!");
-//   } else (winningCategory4) {
-//     console.log("MEH JOB!");
-//   }
-// }
-
-// });
 
 // // /*MODEL: Game Behavior**********
 
