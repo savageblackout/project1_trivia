@@ -106,7 +106,7 @@ var questions = [
   },
   {
     prompt: "‘I'm a nice guy — how come girls don't want to sleep with me?’ This common lament is not only the most tired trope in movies starring a shlubby dude who ends up getting the girl at the end of 1.5 to 2 hours, but it is also:",
-    answer: "b",
+    answer: "a",
     options: [
     "The opposite of a ‘Bad Boy’",
     "An example of ‘Dread game’",
@@ -116,7 +116,7 @@ var questions = [
   },
   {
     prompt: "I’m a bro who has fallen in love *gasp* with a woman. I’m the worst because:",
-    answer: "b",
+    answer: "d",
     options: [
     "Monogamy/romance/marriage is the enemy of the ‘woke’ man",
     "I put a woman on a pedestal, which is exactly where she doesn’t belong",
@@ -125,34 +125,48 @@ var questions = [
     ]
   },
 ];
-
+var winnerCategory = [
+  [{title: "You are an Official Mens Rights Activist!!",
+  explanation: "Wow! You strike fear in thea hearts of feminists everywhere. Time to look up the local MRA chapter, bro!"
+  }],
+  [{title: "You are a Frequent 'Red Pill' Reddit Contributor",
+  explanation: "Well done! You know your stuff, but you could stand to do some studying."
+  }],
+  [{title: "You are a Female Chauvanist",
+  explanation: "Whoa! Pump the brakes buddy...get to know the male struggle."
+  }],
+  [{title: "You are a FemiNazi",
+  explanation: "Did you guys just feel that? The hair on the back of my neck is standing on end...oh wait, its just you. No man is safe with you near!"
+  }],
+]
 var questionNumber = 0;
-
-/* CLICK FUNCTION FOR CHOICES *******************/
-var selected = "";
-
-$( "#a" ).on('click', function(evt) {
-    selected = $(this).attr("id");
-});
-
-$( "#b" ).on('click', function(evt) {
-    selected = $(this).attr("id");
-});
-
-$( "#c" ).on('click', function(evt) {
-    selected = $(this).attr("id");
-});
-
-$( "#d" ).on('click', function(evt) {
-    selected = $(this).attr("id");
-});
+var categoryNumber = 0;
+var score = 0;
+// var player =
 
 /* MODEL Behavior *****************************************************/
-var correctAnswer = questions[questionNumber].answer;
 
-var checkAnswer = function() {
-  if(correctAnswer === selected) {
-    console.log("Correct");
+/* THIS SETS A VAR FOR THE CORRECT ANSWER ****************************/
+
+// var correctAnswer = questions[questionNumber].answer;
+//   console.log(correctAnswer);
+//   console.log(questions[questionNumber].answer);
+
+ /* CLICK FUNCTION *****************************************/
+
+var selected;
+
+$("input:radio").on('click', function(){
+  selected = ($(this).val());
+  // console.log(selected);
+});
+
+/* THIS CHECKS IF THE CLICKED ANSWER IS CORRECT ************************/
+
+function checkAnswer(selectedAnswer) {
+  if(questions[questionNumber].answer === selectedAnswer) {
+    console.log("correct");
+    score++;
   } else {
     console.log("Incorrect");
   }
@@ -160,16 +174,21 @@ var checkAnswer = function() {
 
 /* CLICK 'SUBMIT' TO SUBMIT CHECKED ANSWER ****************/
 
-
 $("#submit").on("click", function(){
-  checkAnswer();
+  console.log("working");
+  checkAnswer(selected);
+  // gameFunction();
   questionNumber += 1;
   render();
   removeRadioButton();
+  selected = undefined;
+    if(questionNumber === 12){
+      winnerIs();
+      renderWinner();
+    }
 });
 
-
-/* FUNCTION TO REMOVE SELECTED BUTTON*****************/
+/* FUNCTION TO REMOVE SELECTED BUTTON WHEN THE NEXT QUESTION LOADS *****************/
 
 function removeRadioButton() {
   $("input:radio:checked").removeAttr("checked");
@@ -178,23 +197,82 @@ function removeRadioButton() {
 /* CLICK START BUTTON PAGE TRANSITION *******************************/
 
 $("#start").on("click", function(evt) {
-    $("#title-container").addClass("hidden");
-    $("#quizContainer").removeClass("hidden");
-    $("#restart").addClass("hidden");
-    $("#start").addClass("hidden");
-  });
-
+  $("#title-container").addClass("hidden");
+  $("#quizContainer").removeClass("hidden");
+  $("#restart").addClass("hidden");
+  $("#start").addClass("hidden");
+});
 
 /* CLICK RESTART TO PLAY AGAIN ******************/
 
 var restartGame = function(){
   $("#restart").removeClass("hidden");
-    //take me back to the quizContainer
+  $("#restart").on("click", function(evt) {
+  $("#title-container").removeClass("hidden");
+  $("#quizContainer").addClass("hidden");
+  });
+}
+// }
+
+
+// var assignCats = function() {
+// if (score <= 12 && score >= 9) {
+//       console.log("winner category 1");
+//   } else if (score < 9 && score >= 6) {
+//       console.log("winner category 2");
+//   } else if (score < 6 && score >= 3) {
+//       console.log("winner category 3");
+//   } else if (score < 3 && score >= 0) {
+//       console.log("winner category 4");
+//   }
+// };
+
+/* WINNER CATEGORIES CONDITION ****************************************************/
+
+if (score <= 12 && score >= 9) {
+  categoryNumber = 1;
+} else if (score < 9 && score >= 6) {
+  categoryNumber = 2;
+} else if (score < 6 && score >= 3) {
+  categoryNumber = 3;
+} else if (score < 3 && score >= 0) {
+  categoryNumber = 4;
+}
+
+/* WINNER CATEGORY SCREEN ***********************************/
+
+var winnerIs = function(assignCats){
+  if (player === winnerCategory1){
+    $("#quizContainer").addClass("hidden");
+
+    $("#images").removeClass("hidden");
+    $("#winnerCategory1").removeClass("hidden");
+    restartGame();
+  } else if (player === winnerCategory2){
+    $("#quizContainer").addClass("hidden");
+
+    $("#images").removeClass("hidden");
+    $("#winnerCategory2").removeClass("hidden");
+    restartGame();
+  } else if (player === winnerCategory3){
+    $("#quizContainer").addClass("hidden");
+
+    $("#images").removeClass("hidden");
+    $("#winnerCategory3").removeClass("hidden");
+    restartGame();
+  } else if (player === winnerCategory4){
+    $("#quizContainer").addClass("hidden");
+
+    $("#images").removeClass("hidden");
+    $("#winnerCategory4").removeClass("hidden");
+    restartGame();
+  }
 }
 
 /* VIEW ELEMENTS ******************************************************/
 
 var $questions = $(document.getElementById('questions'));
+var $winnerCategory = $(document.getElementById("winner-category"));
 
 var render = function() {
   // 1. identify the information we need
@@ -215,44 +293,19 @@ var render = function() {
   $answerD.text(currentQuestion.options[3]);
 };
 
+var renderWinner = function() {
+  var currentWinner = winnerCategory[categoryNumber];
+
+  var winnerBox = $("winner-category");
+
+}
+
 /* STARTUP ************************************************************/
 
 render();
+
+
 // });
-
-/* DEAD CODE **********************************************************/
-
-// //Winner categories and descriptions
-var assignCats = function() {
-    if (correctAnswer <= 12 && correctAnswer >= 9) {
-        console.log("winner category 1");
-    } else if (correctAnswer < 9 && correctAnswer >= 6) {
-        console.log("winner category 2");
-    } else if (correctAnswer < 6 && correctAnswer >= 3) {
-        console.log("winner category 3");
-    } else if (correctAnswer < 3 && correctAnswer >= 0) {
-        console.log("winner category 4");
-    }
-};
-// var $winningCategory1 = $('#winnerCategory1');
-// var $winningCategory2 = $('#winnerCategory1');
-// var $winningCategory3 = $('#winnerCategory1');
-// var $winningCategory4 = $('#winnerCategory1');
-
-// $('#winningCategory1') = "Official Mens Rights Activist";
-// $('#winningCategory2') = "Frequent 'Red Pill' Reddit Contributor";
-// $('#winningCategory3') = "Female Chauvanist";
-// $('#winningCategory4') = "FemiNazi";
-
-// var $winnerExplain1 = $('#winnerExplain1');
-// var $winnerExplain2 = $('#winnerExplain2');
-// var $winnerExplain3 = $('#winnerExplain3');
-// var $winnerExplain4 = $('#winnerExplain4');
-
-// $('#winnerExplain1') = "wow! time to look up the local MRA chapter";
-// $('#winnerExplain2') = "well done. you know your stuff, but you could stand to do some studying";
-// $('#winnerExplain3') = "whoa! pump the brakes buddy. get to know the male struggle";
-// $('#winnerExplain4') = "GTFOH with your 'feminist' agenda! No man is safe with you around";
 
 
 
