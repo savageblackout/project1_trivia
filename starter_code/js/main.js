@@ -60,7 +60,7 @@ $( "#d" ).on('click', function(evt) {
 /* MODEL Behavior *****************************************************/
 var correctAnswer = questions[questionNumber].answer;
 
-var checkAnswer = function(correctAnswer, selected) {
+var checkAnswer = function() {
   if(correctAnswer === selected) {
     console.log("Correct");
   } else {
@@ -75,8 +75,16 @@ $("#submit").on("click", function(){
   checkAnswer();
   $("#submit").off("click");
   questionNumber += 1;
+  render();
+  removeRadioButton();
 });
 
+
+// function to remove selected radio button
+
+function removeRadioButton() {
+  $("input:radio:checked").removeAttr("checked");
+}
 
 /* CLICK START BUTTON PAGE TRANSITION *******************************/
 
