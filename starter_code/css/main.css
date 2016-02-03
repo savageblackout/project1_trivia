@@ -1,64 +1,86 @@
 body {
-/*  background-image: url("file:///Users/claire/code/Project01_MisandryTrivia/assets/background.jpg");
-*/  background-size: cover;
+  background-image: url(../../assets/background.jpg);
+  background-size: cover;
   }
 
 h1 {
   text-align: center;
   margin-top: 10px;
-  color: #FD67DF;
+  color: #380632;
   font-family: Barbie;
+  font-size: 50pt;
+  text-shadow: 2px 2px #F707DB;
+  }
+h2, h3 {
+  text-align: center;
+  color: #380632;
+  font-family: Barbie;
+  }
+h2 {
+  font-size: 30pt;
+  }
+h3 {
+  font-size: 25pt;
   }
 
 #quizContainer {
-  border: 3px solid #FD67DF;
+  border: 3px solid #380632;
   padding: 15px;
   padding-top: 50px;
-  height: 600px;
+  height: 690px;
   top: 50%;
-
   }
 
 #questions {
   border-style: dashed;
+  font-family: Barbie;
   padding: 20px;
   text-align: center;
-  color: #FD67DF;
+  color: #380632;
+  font-size: 25pt;
   }
 
 .choices {
   border: 15px;
-  padding-top: 20px;
+  padding-top: 10px;
   float: left;
   width: 50%;
-  margin-top: 40px;
-  color: #FD67DF;
+  margin-top: 30px;
+  color: #380632;
   }
 
 #a {
+  font-family: Barbie;
+  font-size: 16pt;
   border-style: solid;
-  padding: 10px;
+  padding: 5px;
   width: 65%;
   clear: both;
   }
 
 #b {
+  font-family: Barbie;
+  font-size: 16pt;
   border-style: solid;
-  padding: 10px;
+  padding: 5px;
   width: 65%;
   clear: both;
   }
 
 #c {
+  font-family: Barbie;
+  font-size: 16pt;
   border-style: solid;
-  padding: 10px;
+  padding: 5px;
   width: 65%;
   clear: both;
   }
 
 #d {
+  font-family: Barbie;
+  font-size: 16pt;
   border-style: solid;
-  padding: 10px;
+  padding: 5px;
   width: 65%;
   clear: both;
   }
@@ -67,8 +89,7 @@ h1 {
   width: 35%;
   }
 
-
 .hidden {
   display: none;
-}
+  }
 

@@ -1,7 +1,8 @@
 console.log("main.js loaded!");
- $(document).ready(function(){
+ // $(document).ready(function(){
 
 /* MODEL Data *********************************************************/
+
 var questions = [
   {
     prompt:  "'Thank you for publishing this list. Such factual ammunition, conveniently at our fingertips, is just the thing we need.'  This is a(n):",
@@ -37,20 +38,62 @@ var questions = [
 
 var questionNumber = 0;
 
+/* CLICK FUNCTION FOR CHOICES *******************/
+var selected = "";
+
+$( "#a" ).on('click', function(evt) {
+    selected = $(this).attr("id");
+});
+
+$( "#b" ).on('click', function(evt) {
+    selected = $(this).attr("id");
+});
+
+$( "#c" ).on('click', function(evt) {
+    selected = $(this).attr("id");
+});
+
+$( "#d" ).on('click', function(evt) {
+    selected = $(this).attr("id");
+});
+
 /* MODEL Behavior *****************************************************/
+var correctAnswer = questions[questionNumber].answer;
 
-var checkAnswer = function() {
-
+var checkAnswer = function(correctAnswer, selected) {
+  if(correctAnswer === selected) {
+    console.log("Correct");
+  } else {
+    console.log("Incorrect");
+  }
 };
+
+/* CLICK 'SUBMIT' TO SUBMIT CHECKED ANSWER ****************/
+
+
+$("#submit").on("click", function(){
+  checkAnswer();
+  $("#submit").off("click");
+  questionNumber += 1;
+});
+
 
 /* CLICK START BUTTON PAGE TRANSITION *******************************/
 
-$('#start').on('click', function(evt) {
-    console.log(evt, this);
-    $('#title-container').addClass('hidden');
-    $('#quizContainer').removeClass('hidden');
+$("#start").on("click", function(evt) {
+    $("#title-container").addClass("hidden");
+    $("#quizContainer").removeClass("hidden");
+    $("#restart").addClass("hidden");
+    $("#start").addClass("hidden");
   });
 
+
+/* CLICK RESTART TO PLAY AGAIN ******************/
+
+var restartGame = function(){
+  $("#restart").removeClass("hidden");
+    //take me back to the quizContainer
+}
 
 /* VIEW ELEMENTS ******************************************************/
 
@@ -76,21 +119,24 @@ var render = function() {
 };
 
 /* STARTUP ************************************************************/
-// var checkAnswer = function() {
-//   if (currentQuestion === currentQuestion.answer){
-//     render();
-//   } else {
-//     alert("wrong");
-//   }
-// };
 
 render();
-});
+// });
 
 /* DEAD CODE **********************************************************/
 
 // //Winner categories and descriptions
-
+var assignCats = function() {
+    if (correctAnswer <= 12 && correctAnswer >= 9) {
+        console.log("winner category 1");
+    } else if (correctAnswer < 9 && correctAnswer >= 6) {
+        console.log("winner category 2");
+    } else if (correctAnswer < 6 && correctAnswer >= 3) {
+        console.log("winner category 3");
+    } else if (correctAnswer < 3 && correctAnswer >= 0) {
+        console.log("winner category 4");
+    }
+};
 // var $winningCategory1 = $('#winnerCategory1');
 // var $winningCategory2 = $('#winnerCategory1');
 // var $winningCategory3 = $('#winnerCategory1');
@@ -111,44 +157,6 @@ render();
 // $('#winnerExplain3') = "whoa! pump the brakes buddy. get to know the male struggle";
 // $('#winnerExplain4') = "GTFOH with your 'feminist' agenda! No man is safe with you around";
 
-// //Start the game
-
-// var pickRandomQuestion = function (){
-//   var randomIndex = Math.floor(Math.random() * openQuestions.length);
-//   var splicedValue = openQuestions.splice(randomIndex, 1);
-//   return splicedValue[0];
-// };
-
-// var restartGame = function(){
-//   initGame(){
-
-//   }
-// }
 
 
 
-// // /*MODEL: Game Behavior**********
-
-
-// // /*Helper Methods*******************
-
-// // //Screen render
-
-
-// // /* VIEW: Render******************
-
-
-
-// // /*Interaction: User-initiated handlers*********
-
-
-// // /*Interaction: Other gameplay functions******
-
-
-
-// // /* Start up **********
-
-// // //Global variables
-// // //DOM functions
-
-// // //Start the game!
