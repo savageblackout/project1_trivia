@@ -88,10 +88,11 @@ form {
   clear: both;
   }
 
- div > #images {
-  margin-right: 50px;
+ #images {
+  margin-right: 10px;
   float: right;
-  width: 35%;
+  max-width: 100%;
+  height: auto;
   }
 
 #winnerCategory1 {
@@ -102,12 +103,22 @@ form {
   top: 50%;
   }
 
+#winnerCategory1 img{
+  max-width: 100%;
+  height: auto;
+  }
+
 #winnerCategory2 {
   border: 3px solid #380632;
   padding: 15px;
   padding-top: 50px;
   height: 690px;
   top: 50%;
+  }
+
+#winnerCategory2 img{
+  max-width: 100%;
+  height: auto;
   }
 
 #winnerCategory3 {
@@ -118,12 +129,22 @@ form {
   top: 50%;
   }
 
+#winnerCategory3 img{
+  max-width: 100%;
+  height: auto;
+  }
+
 #winnerCategory4 {
   border: 3px solid #380632;
   padding: 15px;
   padding-top: 50px;
   height: 690px;
   top: 50%;
+  }
+
+#winnerCategory4 img{
+  max-width: 100%;
+  height: auto;
   }
 
 .hidden {
