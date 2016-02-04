@@ -76,7 +76,7 @@ var questions = [
   },
   {
     prompt: "‘All women are the same’ is a belief evidenced in:",
-    answer: "b",
+    answer: "d",
     options: [
     "Denying women ‘snowflake’ status",
     "Noncel behavior",
@@ -125,40 +125,33 @@ var questions = [
     ]
   },
 ];
-var winnerCategory = [
-  [{title: "You are an Official Mens Rights Activist!!",
-  explanation: "Wow! You strike fear in thea hearts of feminists everywhere. Time to look up the local MRA chapter, bro!"
-  }],
-  [{title: "You are a Frequent 'Red Pill' Reddit Contributor",
-  explanation: "Well done! You know your stuff, but you could stand to do some studying."
-  }],
-  [{title: "You are a Female Chauvanist",
-  explanation: "Whoa! Pump the brakes buddy...get to know the male struggle."
-  }],
-  [{title: "You are a FemiNazi",
-  explanation: "Did you guys just feel that? The hair on the back of my neck is standing on end...oh wait, its just you. No man is safe with you near!"
-  }],
-]
+// var winnerCategory = [
+//   [{title: "You are an Official Mens Rights Activist!!",
+//   explanation: "Wow! You strike fear in the hearts of feminists everywhere. Time to look up the local MRA chapter, bro!"
+//   }],
+//   [{title: "You are a Frequent 'Red Pill' Reddit Contributor",
+//   explanation: "Well done! You know your stuff, but you could stand to do some studying."
+//   }],
+//   [{title: "You are a Female Chauvanist",
+//   explanation: "Whoa! Pump the brakes buddy...get to know the male struggle."
+//   }],
+//   [{title: "You are a FemiNazi",
+//   explanation: "Did you guys just feel that? The hair on the back of my neck is standing on end...oh wait, its just you."
+//   }],
+// ]
 var questionNumber = 0;
 var categoryNumber = 0;
 var score = 0;
-// var player =
+
 
 /* MODEL Behavior *****************************************************/
 
-/* THIS SETS A VAR FOR THE CORRECT ANSWER ****************************/
-
-// var correctAnswer = questions[questionNumber].answer;
-//   console.log(correctAnswer);
-//   console.log(questions[questionNumber].answer);
-
- /* CLICK FUNCTION *****************************************/
+/* CLICK FUNCTION *****************************************/
 
 var selected;
 
 $("input:radio").on('click', function(){
   selected = ($(this).val());
-  // console.log(selected);
 });
 
 /* THIS CHECKS IF THE CLICKED ANSWER IS CORRECT ************************/
@@ -172,20 +165,29 @@ function checkAnswer(selectedAnswer) {
   }
 };
 
-/* CLICK 'SUBMIT' TO SUBMIT CHECKED ANSWER ****************/
+/* CLICK 'SUBMIT' TO SUBMIT CHECKED ANSWER AND RUN LOTS OF FUNCTIONS! ****************/
 
+// $("#submit").on("click", function(){
+//   checkAnswer(selected);
+//   render();
+//   removeRadioButton();
+//   questionNumber ++;
+//   selected = undefined;
+//   if(questionNumber === 11){
+//     winnerIs();
+//   };
+// });
 $("#submit").on("click", function(){
   console.log("working");
   checkAnswer(selected);
-  // gameFunction();
   questionNumber += 1;
-  render();
   removeRadioButton();
   selected = undefined;
-    if(questionNumber === 12){
-      winnerIs();
-      renderWinner();
-    }
+if(questionNumber > 11){
+  winnerIs();
+} else {
+render();
+}
 });
 
 /* FUNCTION TO REMOVE SELECTED BUTTON WHEN THE NEXT QUESTION LOADS *****************/
@@ -199,36 +201,26 @@ function removeRadioButton() {
 $("#start").on("click", function(evt) {
   $("#title-container").addClass("hidden");
   $("#quizContainer").removeClass("hidden");
-  $("#restart").addClass("hidden");
+
   $("#start").addClass("hidden");
 });
 
 /* CLICK RESTART TO PLAY AGAIN ******************/
 
-var restartGame = function(){
-  $("#restart").removeClass("hidden");
-  $("#restart").on("click", function(evt) {
-  $("#title-container").removeClass("hidden");
-  $("#quizContainer").addClass("hidden");
-  });
-}
-// }
+$("#restart").on("click", function(){
+  restartGame();
+});
 
-
-// var assignCats = function() {
-// if (score <= 12 && score >= 9) {
-//       console.log("winner category 1");
-//   } else if (score < 9 && score >= 6) {
-//       console.log("winner category 2");
-//   } else if (score < 6 && score >= 3) {
-//       console.log("winner category 3");
-//   } else if (score < 3 && score >= 0) {
-//       console.log("winner category 4");
-//   }
-// };
+var restartGame = function() {
+  location.reload(true);
+};
 
 /* WINNER CATEGORIES CONDITION ****************************************************/
 
+
+/* WINNER CATEGORY SCREEN ***********************************/
+
+var winnerIs = function(){
 if (score <= 12 && score >= 9) {
   categoryNumber = 1;
 } else if (score < 9 && score >= 6) {
@@ -238,52 +230,42 @@ if (score <= 12 && score >= 9) {
 } else if (score < 3 && score >= 0) {
   categoryNumber = 4;
 }
-
-/* WINNER CATEGORY SCREEN ***********************************/
-
-var winnerIs = function(assignCats){
-  if (player === winnerCategory1){
+  if (categoryNumber === 1){
     $("#quizContainer").addClass("hidden");
-
-    $("#images").removeClass("hidden");
+    // $("#winner-category").removeClass("hidden");
     $("#winnerCategory1").removeClass("hidden");
-    restartGame();
-  } else if (player === winnerCategory2){
+    // restartGame();
+  } else if (categoryNumber === 2){
     $("#quizContainer").addClass("hidden");
-
-    $("#images").removeClass("hidden");
+    // $("#winner-category").removeClass("hidden");
     $("#winnerCategory2").removeClass("hidden");
-    restartGame();
-  } else if (player === winnerCategory3){
+    // restartGame();
+  } else if (categoryNumber === 3){
     $("#quizContainer").addClass("hidden");
-
-    $("#images").removeClass("hidden");
+    // $("#winner-category").removeClass("hidden");
     $("#winnerCategory3").removeClass("hidden");
-    restartGame();
-  } else if (player === winnerCategory4){
+    // restartGame();
+  } else if (categoryNumber === 4){
     $("#quizContainer").addClass("hidden");
-
-    $("#images").removeClass("hidden");
+    // $("#winner-category").removeClass("hidden");
     $("#winnerCategory4").removeClass("hidden");
-    restartGame();
   }
 }
 
-/* VIEW ELEMENTS ******************************************************/
+/* VIEW ELEMENTS******************************************************/
 
-var $questions = $(document.getElementById('questions'));
-var $winnerCategory = $(document.getElementById("winner-category"));
+var $questions = $(document.getElementById("questions"));
 
 var render = function() {
   // 1. identify the information we need
   var currentQuestion = questions[questionNumber];
 
   // 2. identify where it goes
-  var $questionBox = $('#questions');
-  var $answerA = $('#a span');
-  var $answerB = $('#b span');
-  var $answerC = $('#c span');
-  var $answerD = $('#d span');
+  var $questionBox = $("#questions");
+  var $answerA = $("#a span");
+  var $answerB = $("#b span");
+  var $answerC = $("#c span");
+  var $answerD = $("#d span");
 
  // 3. put it there
   $questionBox.text(currentQuestion.prompt);
@@ -293,17 +275,9 @@ var render = function() {
   $answerD.text(currentQuestion.options[3]);
 };
 
-var renderWinner = function() {
-  var currentWinner = winnerCategory[categoryNumber];
-
-  var winnerBox = $("winner-category");
-
-}
-
 /* STARTUP ************************************************************/
 
 render();
-
 
 // });
 
