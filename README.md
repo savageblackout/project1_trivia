@@ -1,6 +1,6 @@
 #Welcome to......
 
-![game title screen shot](file:///Users/claire/code/Project01_MisandryTrivia/assets/Title.png)
+![game title screen shot](file:///Users/claire/code/Project01_MisandryTrivia/assets/header_screen_shot.png)
 
 
 ###Do you have no idea what misandry is? **_FOR SHAME!_**  Perhaps you'd like to bone up on your misandry knowledge. Whatever the reason, test your knowledge with this misandry trivia game!  
@@ -41,7 +41,7 @@ The color pallet and font informed all of the design choices; from the backgroun
 
 The use of memes and gifs is a reflection of my insterests and sense of humor. Who doesnt like a good 'Deal With It Dog', amirite?
 
-![Deal With It Dog meme](file:///Users/claire/code/Project01_MisandryTrivia/assets/small_moving_image/Deal_with_it_dog_gif.gif)
+![Deal With It Dog meme](file:///Users/claire/code/Project01_MisandryTrivia/assets/small_moving_image/deal_with_it_dog_gif.gif)
 
 #Installation Instructions
 

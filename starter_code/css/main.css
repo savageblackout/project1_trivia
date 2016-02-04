@@ -6,10 +6,18 @@ body {
 h1 {
   text-align: center;
   margin-top: 10px;
-  color: #380632;
+  color: #74F0F2;
   font-family: Barbie;
   font-size: 50pt;
   text-shadow: 2px 2px #F707DB;
+  }
+
+#header{
+  border-style: groove;
+  border-color: rgba(249, 230, 252, .5);
+  /*width: 500px;
+  height: 100px;*/
+  text-align: center;
   }
 
 h2, h3 {
@@ -29,7 +37,7 @@ h3 {
 #quizContainer {
   border: 3px solid #380632;
   padding: 15px;
-  padding-top: 50px;
+  padding-top: 20px;
   height: 690px;
   top: 50%;
   }
@@ -106,6 +114,9 @@ form {
 #winnerCategory1 img{
   max-width: 100%;
   height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   }
 
 #winnerCategory2 {
@@ -119,6 +130,9 @@ form {
 #winnerCategory2 img{
   max-width: 100%;
   height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   }
 
 #winnerCategory3 {
@@ -132,6 +146,9 @@ form {
 #winnerCategory3 img{
   max-width: 100%;
   height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   }
 
 #winnerCategory4 {
@@ -145,7 +162,33 @@ form {
 #winnerCategory4 img{
   max-width: 100%;
   height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   }
+
+button {
+  border : solid 3px #decede;
+  border-radius : 2px 3px 3px 3px ;
+  moz-border-radius : 2px 3px 3px 3px ;
+  -webkit-box-shadow : 2px 3px 12px rgba(191,28,191,1.0);
+  -moz-box-shadow : 2px 3px 12px rgba(191,28,191,1.0);
+  box-shadow : 2px 3px 12px rgba(191,28,191,1.0);
+  font-size : 20px;
+  color : #2af7ed;
+  padding : 3px 13px;
+  background : #e678ff;
+  background : -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e678ff), color-stop(100%,#9c0e55));
+  background : -moz-linear-gradient(top, #e678ff 0%, #9c0e55 100%);
+  background : -webkit-linear-gradient(top, #e678ff 0%, #9c0e55 100%);
+  background : -o-linear-gradient(top, #e678ff 0%, #9c0e55 100%);
+  background : -ms-linear-gradient(top, #e678ff 0%, #9c0e55 100%);
+  background : linear-gradient(top, #e678ff 0%, #9c0e55 100%);
+  filter : progid:DXImageTransform.Microsoft.gradient( startColorstr='#e678ff', endColorstr='#9c0e55',GradientType=0 );
+  display: inline-block;
+  text-align: center;
+  /*position: relative;*/
+}
 
 .hidden {
   display: none;
