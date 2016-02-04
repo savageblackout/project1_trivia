@@ -11,14 +11,17 @@ h1 {
   font-size: 50pt;
   text-shadow: 2px 2px #F707DB;
   }
+
 h2, h3 {
   text-align: center;
   color: #380632;
   font-family: Barbie;
   }
+
 h2 {
   font-size: 30pt;
   }
+
 h3 {
   font-size: 25pt;
   }
@@ -32,7 +35,7 @@ h3 {
   }
 
 #questions {
-  border-style: dashed;
+  border: 3px solid #380632;
   font-family: Barbie;
   padding: 20px;
   text-align: center;
@@ -40,7 +43,7 @@ h3 {
   font-size: 25pt;
   }
 
-.choices {
+form {
   border: 15px;
   padding-top: 10px;
   float: left;
@@ -84,13 +87,45 @@ h3 {
   width: 65%;
   clear: both;
   }
- #images img {
+
+ div > #images {
+  margin-right: 50px;
   float: right;
   width: 35%;
   }
-#winner-category{
 
-}
+#winnerCategory1 {
+  border: 3px solid #380632;
+  padding: 15px;
+  padding-top: 50px;
+  height: 690px;
+  top: 50%;
+  }
+
+#winnerCategory2 {
+  border: 3px solid #380632;
+  padding: 15px;
+  padding-top: 50px;
+  height: 690px;
+  top: 50%;
+  }
+
+#winnerCategory3 {
+  border: 3px solid #380632;
+  padding: 15px;
+  padding-top: 50px;
+  height: 690px;
+  top: 50%;
+  }
+
+#winnerCategory4 {
+  border: 3px solid #380632;
+  padding: 15px;
+  padding-top: 50px;
+  height: 690px;
+  top: 50%;
+  }
+
 .hidden {
   display: none;
   }

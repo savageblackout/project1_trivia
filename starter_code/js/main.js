@@ -125,24 +125,9 @@ var questions = [
     ]
   },
 ];
-// var winnerCategory = [
-//   [{title: "You are an Official Mens Rights Activist!!",
-//   explanation: "Wow! You strike fear in the hearts of feminists everywhere. Time to look up the local MRA chapter, bro!"
-//   }],
-//   [{title: "You are a Frequent 'Red Pill' Reddit Contributor",
-//   explanation: "Well done! You know your stuff, but you could stand to do some studying."
-//   }],
-//   [{title: "You are a Female Chauvanist",
-//   explanation: "Whoa! Pump the brakes buddy...get to know the male struggle."
-//   }],
-//   [{title: "You are a FemiNazi",
-//   explanation: "Did you guys just feel that? The hair on the back of my neck is standing on end...oh wait, its just you."
-//   }],
-// ]
-var questionNumber = 0;
-var categoryNumber = 0;
-var score = 0;
 
+var questionNumber = 0;
+var score = 0;
 
 /* MODEL Behavior *****************************************************/
 
@@ -157,26 +142,52 @@ $("input:radio").on('click', function(){
 /* THIS CHECKS IF THE CLICKED ANSWER IS CORRECT ************************/
 
 function checkAnswer(selectedAnswer) {
+  var answer = null;
   if(questions[questionNumber].answer === selectedAnswer) {
-    console.log("correct");
+    console.log("Correct");
     score++;
+    answer = true;
   } else {
     console.log("Incorrect");
+    answer = false;
   }
+
+/* SHOW IMAGE AFTER ANSWER *********************************/
+
+  showHideAnsImg(answer);
 };
+
+function showHideAnsImg(answer){
+  if (questionNumber === 0) {
+    answer ? $('#correct1').show(5000).hide(5000) : $('#incorrect1').show(5000).hide(5000);
+  } else if (questionNumber === 1) {
+    answer ? $('#correct2').show(5000).hide(5000) : $('#incorrect2').show(5000).hide(5000);
+  } else if (questionNumber === 2) {
+    answer ? $('#correct3').show(5000).hide(5000) : $('#incorrect3').show(5000).hide(5000);
+  } else if (questionNumber === 3) {
+    answer ? $('#correct1').show(5000).hide(5000) : $('#incorrect1').show(5000).hide(5000);
+  } else if (questionNumber === 4) {
+    answer ? $('#correct2').show(5000).hide(5000) : $('#incorrect2').show(5000).hide(5000);
+  } else if (questionNumber === 5) {
+    answer ? $('#correct3').show(5000).hide(5000) : $('#incorrect3').show(5000).hide(5000);
+  } else if (questionNumber === 6) {
+    answer ? $('#correct1').show(5000).hide(5000) : $('#incorrect1').show(5000).hide(5000);
+  } else if (questionNumber === 7) {
+    answer ? $('#correct2').show(5000).hide(5000) : $('#incorrect2').show(5000).hide(5000);
+  } else if (questionNumber === 8) {
+    answer ? $('#correct3').show(5000).hide(5000) : $('#incorrect3').show(5000).hide(5000);
+  } else if (questionNumber === 9) {
+    answer ? $('#correct1').show(5000).hide(5000) : $('#incorrect1').show(5000).hide(5000);
+  } else if (questionNumber === 10) {
+    answer ? $('#correct2').show(5000).hide(5000) : $('#incorrect2').show(5000).hide(5000);
+  } else if (questionNumber === 11) {
+    answer ? $('#correct3').show(5000).hide(5000) : $('#incorrect3').show(5000).hide(5000);
+  }
+}
+
 
 /* CLICK 'SUBMIT' TO SUBMIT CHECKED ANSWER AND RUN LOTS OF FUNCTIONS! ****************/
 
-// $("#submit").on("click", function(){
-//   checkAnswer(selected);
-//   render();
-//   removeRadioButton();
-//   questionNumber ++;
-//   selected = undefined;
-//   if(questionNumber === 11){
-//     winnerIs();
-//   };
-// });
 $("#submit").on("click", function(){
   console.log("working");
   checkAnswer(selected);
@@ -215,8 +226,16 @@ var restartGame = function() {
   location.reload(true);
 };
 
-/* WINNER CATEGORIES CONDITION ****************************************************/
+/* CORRECT/INCORRECT IMAGES ****************************************************/
 
+function revealImage() {
+  $('#correct1').css('visibility', (score) ? 'visible' : 'hidden');
+  $('#correct2').css('visibility', (score > 5 && score < 8) ? 'visible' : 'hidden');
+  $('#correct3').css('visibility', (score > 9 && score < 12) ? 'visible' : 'hidden');
+  $('#incorrect1').css('visibility', (score > 2 && score ) ? 'visible' : 'hidden');
+  $('#incorrect2').css('visibility', (score > 9) ? 'visible' : 'hidden');
+  $('#incorrect3').css('visibility', (score > 14) ? 'visible' : 'hidden');
+};
 
 /* WINNER CATEGORY SCREEN ***********************************/
 

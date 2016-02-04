@@ -10,18 +10,17 @@
     <meta charset="utf-8">
     </head>
   <body>
-  <h1 id="header">The Misandry Quiz</h1>
-  <div id="title-container" class="">
-    <h2>Welcome to The Misandry Quiz!</h2>
-      <div id="title-container-gif" class="hidden">
-      <img src="../assets/small_moving_image/star_trek_gif.gif">
+    <h1 id="header">The Misandry Quiz</h1>
+      <div id="title-container" class="">
+    <!--<div id="title-container-gif" class="hidden">
+        img src="../assets/small_moving_image/star_trek_gif.gif">
+        </div> -->
+        <h2>Do you often catch yourself wondering: <b>'hey, am I a misandrist?'</b> or: <b>'how big of a misandrist am I based on a four-part category system?'</b></h2>
+        <h3>Now you have the opportunity to answer a series of questions about, or based off of the logic of, misandry!</h3>
+        <h3>You might be asking yourself, what the heck IS misandry anyways?!</h3>
+        <h3>"Misandry refers to the hatred of males, which Mens Rights Activists (MRAs) purport is a characteristic of every feminist, all females who don't succumb to attempts at seduction, and Western society at large."</h3>
+        <h2>Click the 'Start' button to begin!</h2>
       </div>
-    <h2>Do you often catch yourself wondering: <b>'hey, am I a misandrist?'</b> or: <b>'how big of a misandrist am I based on a four-part category system?'</b></h2>
-    <h3> Well, you're in luck! Now you have the opportunity to answer a series of questions about, or based off of the logic of, misandry!</h3>
-    <h3> Now you might be asking yourself, what the heck IS misandry anyways?!</h3>
-    <h3>"Misandry refers to the hatred of males, which Mens Rights Activists (MRAs) purport is a characteristic of every feminist, all females who don't succumb to attempts at seduction, and Western society at large."</h3>
-    <h2>Click the 'Start' button to begin!</h2>
-  </div>
           <div id="winnerCategory1" class="hidden">
             <h1> You are a Gryffindor! jk oops wrong quiz lol. You are an Official Mens Rights Activist!!</h1>
             <h2> Wow! You strike fear in the hearts of feminists everywhere. Time to look up the local MRA chapter, bro!</h2>
@@ -42,62 +41,64 @@
             <h2> Did you guys just feel that? The hair on the back of my neck is standing on end...oh wait, its just you.</h2>
             <img src="../assets/you_win_category_4/bey.jpeg">
           </div>
-  <div id="quizContainer" class="hidden">
-    <div id="questions"></div>
-      <div class="choices">
-      <form>
-      <div id="a">
-        <label>
-          <input type=radio name="answer" value="a">
-          <span></span>
-        </label>
-      </div><br>
-      <div id="b">
-        <label>
-          <input type=radio name="answer" value="b">
-          <span></span>
-        </label>
-      </div><br>
-      <div id="c">
-        <label>
-          <input type=radio name="answer" value="c">
-          <span></span>
-        </label>
-      </div><br>
-      <div id="d">
-        <label>
-          <input type=radio name="answer" value="d">
-          <span></span>
-        </label>
-      </div><br>
-      </form>
-  </div>
-         <!-- <div id="winner-category" class="hidden"> -->
+        <div id="images">
+            <div id="correct1" style="display: none">
+              <h1>Correct!</h1>
+              <img src="../assets/you_win/painting.jpg">
+            </div>
+            <div id="correct2" style="display: none">
+              <h1>Correct!</h1>
+              <img src="../assets/you_win/winning.png">
+            </div>
+            <div id="correct3" style="display: none">
+              <h1> Correct!</h1>
+              <img src="../assets/you_win/potus.jpeg">
+            </div>
+              <div id="incorrect1" style="display: none">
+                <h1>Incorrect!</h1>
+                <img src="../assets/you_suck/ms_minaj.gif">
+              </div>
+              <div id="incorrect2" style="display: none">
+                <h1>Incorrect!</h1>
+                <img src="../assets/you_suck/ursula.laughing.gif">
+              </div>
+              <div id="incorrect3" style="display: none">
+                <h1>Incorrect!</h1>
+                <img src="../assets/you_suck/slowLaugh.gif">
+              </div>
+          </div>
+      <div id="quizContainer" class="hidden">
+        <div id="questions"></div>
+          <form>
+          <div id="a">
+            <label>
+              <input type=radio name="answer" value="a">
+              <span></span>
+            </label>
+          </div><br>
+          <div id="b">
+            <label>
+              <input type=radio name="answer" value="b">
+              <span></span>
+            </label>
+          </div><br>
+          <div id="c">
+            <label>
+              <input type=radio name="answer" value="c">
+              <span></span>
+            </label>
+          </div><br>
+          <div id="d">
+            <label>
+              <input type=radio name="answer" value="d">
+              <span></span>
+            </label>
+          </div><br>
+        </form>
       </div>
-        <div id="images" class="hidden">
-        <div id="correct1" class="hidden">
-          <img src="../assets/you_win/painting.jpg">
-        </div>
-        <div id="correct2" class="hidden">
-          <img src="../assets/you_win/winning.png">
-        </div>
-        <div id="correct3" class="hidden">
-          <img src="../assets/you_win/potus.jpeg">
-        </div>
-          <div id="incorrect1" class="hidden">
-            <img src="../assets/you_suck/ms_minaj.gif">
-          </div>
-          <div id="incorrect2" class="hidden">
-            <img src="../assets/you_suck/ursula.laughing.gif">
-          </div>
-          <div id="incorrect3" class="hidden">
-            <img src="../assets/you_suck/slowLaugh.gif">
-          </div>
-      </div>
-        <!-- </div> -->
   <button id="start" class="">START</button>
-  <button id="restart" class="">ReSTART</button>
   <button id="submit" class="">SUBMIT</button>
+  <button id="restart" class="">ReSTART</button>
 </body>
 <script src="js/main.js"></script>
 </html>
