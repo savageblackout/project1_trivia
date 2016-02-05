@@ -21,10 +21,11 @@ You will be asked a series of multiple choice questions about all things misandr
 
 #Technologies Used:
 ---
-- HTML
-- CSS
-- JavaScript
-- jQuery
+- Balsamiq: for creating killer wireframes
+- HTML: for giving some support and structure
+- CSS: to make it look so lovely and sparkly
+- JavaScript: to make things happen!
+- jQuery: also making things happen!
 
 #Design Approach
 ---
@@ -65,15 +66,7 @@ Simply load the link in your preferred browser, follow the prompts, and enjoy!
 
 [Cultural Misandry.com](http://www.cultural-misandry.com/feminism-the-hate-group-2/)
 
-[BuzzFeed: How Misandrist Are You](http://www.buzzfeed.com/hnigatu/how-misandrist-are-you#.xamv1KWpV)
 
-[tropes vs. men in video games article on Geek Feminism Wiki](http://geekfeminism.wikia.com/wiki/Tropes_vs._Men_in_Videogames)
-
-[Kotaku sexism against men in video games article](http://kotaku.com/5918217/these-guys-made-a-list-about-sexism-against-men-in-video-games-are-they-trolling)
-
-[Medium article- memeification of misandry](https://medium.com/matter/the-meme-ification-of-misandry-3b0c95ad51f5#.bjlvttyt8)
-
-[Lindy West Jezebel article](http://jezebel.com/5992479/if-i-admit-that-hating-men-is-a-thing-will-you-stop-turning-it-into-a-self-fulfilling-prophecy)
 
 
 
