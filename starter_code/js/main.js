@@ -19,8 +19,9 @@ function checkAnswer(selectedAnswer) {
   var answer = null;
   if(questions[questionNumber].answer === selectedAnswer) {
     console.log("Correct");
-    score++;
+    score += 1;
     answer = true;
+    $("#score").text(score + " /12");
   } else {
     console.log("Incorrect");
     answer = false;
@@ -88,20 +89,10 @@ $("#submit").on("click", function() {
     questionProgress();
     pageRenderImg();
     runWinnerFunc();
-    addScore();
   }
 });
 
 /* I BROKE APART MY HUGE CLICK FUNCTION!***************************/
-
-var addScore = function() {
-  if (score++ === true){
-    console.log("yay!");
-    $("#score").addAttr(score + " /12");
-  } else {
-    console.log("boo.");
-  }
-}
 
 var questionProgress = function() {
   checkAnswer(selected);
@@ -118,12 +109,10 @@ var pageRenderImg = function() {
 var runWinnerFunc = function() {
 if(questionNumber > 10){
     winnerIs();
-
   } else {
     render();
   }
 }
-
 
 /* CLICK ANSWER FUNCTION *****************************************/
 

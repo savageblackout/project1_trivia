@@ -25,7 +25,15 @@ h1 {
 
 #score {
   position: relative;
-  border: 1px #F707DB;
+  border-style: inset;
+  border-color: rgba(249, 230, 252, .5);
+  width: 300px;
+  height: 100px;
+  font-family: Barbie;
+  color: #380632;
+  font-size: 12pt;
+  left: 550px;
+  bottom: 76px;
 }
 
 h2, h3 {
