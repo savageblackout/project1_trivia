@@ -21,10 +21,12 @@ function checkAnswer(selectedAnswer) {
     console.log("Correct");
     score += 1;
     answer = true;
-    $("#score").text(score + " /12");
+    $("#score").text(score + " correct out of 12");
   } else {
     console.log("Incorrect");
     answer = false;
+    score;
+    $("#score").text(score + " correct out of 12");
   }
   showHideAnsImg(answer);
 };
@@ -34,7 +36,7 @@ function checkAnswer(selectedAnswer) {
 var winnerIs = function() {
   var categoryNumber;
 
-  if (score <= 12 && score >= 9) {
+  if (score < 10 && score >= 9) {
     categoryNumber = 1;
   } else if (score < 9 && score >= 6) {
     categoryNumber = 2;
@@ -125,6 +127,7 @@ $("input:radio").on('click', function(){
 $("#start").on("click", function(evt) {
   $("#title-container").fadeOut(2000).addClass("hidden");
   $("#quizContainer").fadeIn(2000).removeClass("hidden");
+  $("#score").fadeIn(2000).removeClass("hidden");
   $("#start").addClass("hidden");
 });
 

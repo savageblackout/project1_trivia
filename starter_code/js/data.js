@@ -2,7 +2,7 @@ console.log("data.js loadded…");
 
 var questions = [
   {
-    prompt:  "'Thank you for publishing this list. Such factual ammunition, conveniently at our fingertips, is just the thing we need.'  This is:",
+    prompt:  "1) 'Thank you for publishing this list. Such factual ammunition, conveniently at our fingertips, is just the thing we need.'  This is:",
     answer:  "a",
     options: [
       "A comment left on an article about female only programs",
@@ -12,7 +12,7 @@ var questions = [
     ]
   },
   {
-    prompt: "'Take the red pill' is a phrase often used by this group of people:",
+    prompt: "2) 'Take the red pill' is a phrase often used by this group of people:",
     answer: "d",
     options: [
       "Huge fans of The Matrix",
@@ -22,7 +22,7 @@ var questions = [
     ]
   },
   {
-    prompt: "The 'manosphere' refers to:",
+    prompt: "3) The 'manosphere' refers to:",
     answer: "d",
     options: [
       "A magical land where men have equal rights as women",
@@ -32,7 +32,7 @@ var questions = [
     ]
   },
   {
-    prompt: "'My 'game' is lacking bro. What is a guy to do?' An appropriate answer within the tenets of misandry would be:",
+    prompt: "4) 'My 'game' is lacking bro. What is a guy to do?' An appropriate answer within the tenets of misandry would be:",
     answer: "d",
     options: [
       "'Stop messing with Western Women bro. They are indoctrinated with evil feminist propaganda",
@@ -42,7 +42,7 @@ var questions = [
     ]
   },
   {
-    prompt: "'Incel' is a term used to describe:",
+    prompt: "5) 'Incel' is a term used to describe:",
     answer: "b",
     options: [
       "The prototype for the Intel Pentium Processor",
@@ -52,7 +52,7 @@ var questions = [
     ]
   },
   {
-    prompt: "'Hypergamy' sounds like a way to describe the way the meat of a very excited deer tastes, but really it means:",
+    prompt: "6) 'Hypergamy' sounds like a way to describe the way the meat of a very excited deer tastes, but really it means:",
     answer: "c",
     options: [
       "A t-shirt popular in the ‘90s that changes colors based on temperature",
@@ -62,7 +62,7 @@ var questions = [
     ]
   },
   {
-    prompt: "'Brody, you’re a good guy, but I think we should just be friends'…whoa bro, you just got:",
+    prompt: "7) 'Brody, you’re a good guy, but I think we should just be friends'…whoa bro, you just got:",
     answer: "b",
     options: [
       "A new friend! Yay!",
@@ -72,37 +72,37 @@ var questions = [
     ]
   },
   {
-    prompt: "‘All women are the same’ is a belief evidenced in:",
+    prompt: "8) ‘All women are the same’ is a belief evidenced in:",
     answer: "d",
     options: [
       "Denying women ‘snowflake’ status",
-      "Noncel behavior",
+      "The global communtiy in general",
       "GFTOW, or ‘go find ten other women’, as a way to get over rejection by a woman",
       "All of the above"
     ]
   },
   {
-    prompt: "‘Oh that Johnny is a bad boy with that leather jacket and that Harley Davidson. He is so mean to me but I just cant get enough of him!’. Johnny is an example of:",
+    prompt: "9) ‘Oh that Johnny is a bad boy with that leather jacket and that Harley Davidson. He is so mean to me but I just cant get enough of him!’. Johnny is an example of:",
     answer: "d",
     options: [
-      "An Androphile",
+      "A real catch",
       "A Beta male",
       "A foreign woman",
       "An Alpha male"
     ]
   },
   {
-    prompt: "I am a man who wants to live in a separate society far from all females because this feminazism and female supremacy is bumming me out. I am:",
+    prompt: "10) I am a man who wants to live in a separate society far from all females because this feminazism and female supremacy is bumming me out. I am:",
     answer: "b",
     options: [
-      "A character from a popular graphic novel series whose name is Yorick",
-      "A 'Man Going His Own Way'",
       "Commonly referred to as 'the gun in the room'",
+      "A 'Man Going His Own Way'",
+      "Kind of a bummer to hang out with",
       "A Noncel"
     ]
   },
   {
-    prompt: "‘I'm a nice guy — how come girls don't want to sleep with me?’ This common lament is not only the most tired trope in movies starring a shlubby dude who ends up getting the girl at the end of 1.5 to 2 hours, but it is also:",
+    prompt: "11) ‘I'm a nice guy — how come girls don't want to sleep with me?’ This common lament is not only the most tired trope in movies starring a shlubby dude who ends up getting the girl at the end of 1.5 to 2 hours, but it is also:",
     answer: "a",
     options: [
       "The opposite of a ‘Bad Boy’",
@@ -112,7 +112,7 @@ var questions = [
     ]
   },
   {
-    prompt: "I’m a bro who has fallen in love *gasp* with a woman. I’m the worst because:",
+    prompt: "12) I’m a bro who has fallen in love *gasp* with a woman. I’m the worst because:",
     answer: "d",
     options: [
       "Monogamy/romance/marriage is the enemy of the ‘woke’ man",
