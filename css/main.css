@@ -92,6 +92,12 @@ form {
 
 /* BOXES CONTAINING OPTIONS HERE ********************/
 
+
+#a:hover, #b:hover, #c:hover, #d:hover {
+  opacity: 0.5;
+  background-color: #FAF5F9;
+}
+
 #a {
   font-family: Barbie;
   font-size: 17pt;

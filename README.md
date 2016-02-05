@@ -2,7 +2,6 @@
 
 ![game title screen shot](file:///Users/claire/code/project1_trivia/assets/images/title.png)
 
-
 ###Do you have no idea what misandry is? **_FOR SHAME!_**  Perhaps you'd like to bone up on your misandry knowledge. Whatever the reason, test your knowledge with this misandry trivia game!  
 
 Be the delight of every dinner party as you dazzle guests with your deep and intimate knowledge of the hatred of males; which Mens Rights Activists (MRAs) purport is a characteristic of every feminist, all females who don't succumb to attempts at seduction, and Western society at large. 
@@ -42,7 +41,9 @@ The color pallet and font informed all of the design choices; from the backgroun
 
 The use of memes and gifs is a reflection of my insterests and sense of humor. Who doesnt like a good 'Deal With It Dog', amirite?
 
+
 ![Deal With It Dog meme](file:///Users/claire/code/project1_trivia/assets/small_moving_image/dog.gif)
+
 
 #Installation Instructions
 
