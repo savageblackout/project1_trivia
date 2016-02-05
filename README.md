@@ -1,12 +1,12 @@
 #Welcome to......
 
-![game title screen shot](file:///Users/claire/code/project1_trivia/assets/images/title.png)
+![game title screen shot](http://i.imgur.com/dIHY9Mn.png)
 
 ###Do you have no idea what misandry is? **_FOR SHAME!_**  Perhaps you'd like to bone up on your misandry knowledge. Whatever the reason, test your knowledge with this misandry trivia game!  
 
 Be the delight of every dinner party as you dazzle guests with your deep and intimate knowledge of the hatred of males; which Mens Rights Activists (MRAs) purport is a characteristic of every feminist, all females who don't succumb to attempts at seduction, and Western society at large. 
 
-![Uhura has to check Scottie](file:///Users/claire/code/project1_trivia/assets/small_moving_image/star_trek_gif.gif)
+![Uhura has to check Scottie](http://i.imgur.com/RpgnIoc.gifv)
 
 
 ##How does it all work?!
@@ -30,11 +30,11 @@ You will be asked a series of multiple choice questions about all things misandr
 ---
 The design for The Misandry Quiz is heavily influenced by this t-shirt, which I recieved as a birthday gift from a dear friend: 
 
-![a tishirt with a big pink heart on the front with 'Misandry' printed inside of it](file:///Users/claire/code/project1_trivia/assets/barbie_stuff/tee_shirt_logo.jpg)
+![a tishirt with a big pink heart on the front with 'Misandry' printed inside of it](http://i.imgur.com/TeKOUqF.jpg)
 
 The font on this shirt reminds me of one of my favorite childhood toys; more specifically, it brings to mind the font used for the Barbie brand:
 
-![Barbie logo](file:///Users/claire/code/project1_trivia/assets/barbie_stuff/barbie.font.png)
+![Barbie logo](http://i.imgur.com/o4v8I0K.png)
 
 
 The color pallet and font informed all of the design choices; from the background art, to the font color, to the logo design.
@@ -42,7 +42,7 @@ The color pallet and font informed all of the design choices; from the backgroun
 The use of memes and gifs is a reflection of my insterests and sense of humor. Who doesnt like a good 'Deal With It Dog', amirite?
 
 
-![Deal With It Dog meme](file:///Users/claire/code/project1_trivia/assets/small_moving_image/dog.gif)
+![Deal With It Dog meme](http://i.imgur.com/LxM4EN3.gifv)
 
 
 #Installation Instructions
