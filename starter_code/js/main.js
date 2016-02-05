@@ -34,9 +34,9 @@ function checkAnswer(selectedAnswer) {
 /* WINNER CATEGORY SCREEN ***********************************/
 
 var winnerIs = function() {
-  var categoryNumber;
-
-  if (score < 10 && score >= 9) {
+    var categoryNumber;
+  $("#submit").addClass("hidden");
+  if (score > 10 && score >= 9) {
     categoryNumber = 1;
   } else if (score < 9 && score >= 6) {
     categoryNumber = 2;
@@ -104,12 +104,12 @@ var questionProgress = function() {
 
 var pageRenderImg = function() {
   removeRadioButton();
-  $("#quizContainer").fadeOut(10).delay(3500).fadeIn(1000);
-  $(":button").fadeOut(10).delay(3500).fadeIn(1000);
+  $("#quizContainer").fadeOut(1).delay(3500).fadeIn(1000);
+  $(":button").fadeOut(1).delay(3500).fadeIn(1000);
 }
 
 var runWinnerFunc = function() {
-if(questionNumber > 10){
+if(questionNumber > 11){
     winnerIs();
   } else {
     render();
@@ -128,6 +128,7 @@ $("#start").on("click", function(evt) {
   $("#title-container").fadeOut(2000).addClass("hidden");
   $("#quizContainer").fadeIn(2000).removeClass("hidden");
   $("#score").fadeIn(2000).removeClass("hidden");
+  $("#submit").removeClass("hidden");
   $("#start").addClass("hidden");
 });
 

@@ -37,7 +37,7 @@ var questions = [
     options: [
       "'Stop messing with Western Women bro. They are indoctrinated with evil feminist propaganda",
       "'Find a HB (Hot Babe) who is DTF (Down To Eff)'",
-      "'Get a hobby, bro!'",
+      "'Get a hobby!'",
       "A & B"
     ]
   },
@@ -108,7 +108,7 @@ var questions = [
       "The opposite of a ‘Bad Boy’",
       "An example of ‘Dread game’",
       "Omega rage",
-      "The oldest trick in the book of ‘Pick-Up Artists’"
+      "A chapter in the book titled: 'Whining: It's Not Just for Toddlers and Puppies'"
     ]
   },
   {
