@@ -47,7 +47,7 @@ The use of memes and gifs is a reflection of my insterests and sense of humor. W
 
 #Installation Instructions
 
-Simply load the link in your preferred browser, follow the prompts, and enjoy!
+Simply load [this link](http://savageblackout.github.io/project1_trivia/) in your preferred browser, follow the prompts, and enjoy!
 
 #Next Steps
 
