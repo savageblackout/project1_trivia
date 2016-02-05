@@ -23,6 +23,11 @@ h1 {
   margin: 0 auto;
   }
 
+#score {
+  position: relative;
+  border: 1px #F707DB;
+}
+
 h2, h3 {
   text-align: center;
   color: #380632;
@@ -58,6 +63,7 @@ h3 {
 #questions {
   border: 3px inset #380632;
   font-family: Barbie;
+  padding-bottom: 5px;
   padding: 15px;
   text-align: center;
   color: #380632;
@@ -126,7 +132,6 @@ form {
   height: auto;
   margin: 0 417px;
   position: absolute;
-
   }
 
 #correct2{
@@ -197,7 +202,6 @@ form {
 /*WINNER PAGES WITH IMAGES *************************/
 
 #winnerCategory1 {
-  border: 3px solid #380632;
   padding: 15px;
   padding-top: 50px;
   height: 400px;
@@ -214,7 +218,6 @@ form {
 }
 
 #winnerCategory2 {
-  border: 3px solid #380632;
   padding: 15px;
   padding-top: 50px;
   height: 400px;
@@ -229,7 +232,6 @@ form {
 }
 
 #winnerCategory3 {
-  border: 3px solid #380632;
   padding: 15px;
   padding-top: 50px;
   height: 400px;
@@ -244,7 +246,6 @@ form {
 }
 
 #winnerCategory4 {
-  border: 3px solid #380632;
   padding: 15px;
   padding-top: 50px;
   height: 400px;

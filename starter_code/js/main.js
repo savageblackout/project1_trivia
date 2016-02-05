@@ -84,21 +84,46 @@ $("#submit").on("click", function() {
   console.log("working");
   if (!selected) {
     return; // return nothing. do nothing. stop the function. ignore this.
+  } else {
+    questionProgress();
+    pageRenderImg();
+    runWinnerFunc();
+    addScore();
   }
+});
+
+/* I BROKE APART MY HUGE CLICK FUNCTION!***************************/
+
+var addScore = function() {
+  if (score++ === true){
+    console.log("yay!");
+    $("#score").addAttr(score + " /12");
+  } else {
+    console.log("boo.");
+  }
+}
+
+var questionProgress = function() {
   checkAnswer(selected);
   questionNumber += 1;
   selected = undefined;
+}
 
+var pageRenderImg = function() {
   removeRadioButton();
   $("#quizContainer").fadeOut(10).delay(3500).fadeIn(1000);
-  $(":button").fadeOut(10).delay(3500).fadeIn(1000)
+  $(":button").fadeOut(10).delay(3500).fadeIn(1000);
+}
 
-  if(questionNumber > 11){
+var runWinnerFunc = function() {
+if(questionNumber > 10){
     winnerIs();
+
   } else {
     render();
   }
-});
+}
+
 
 /* CLICK ANSWER FUNCTION *****************************************/
 
