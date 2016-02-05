@@ -30,7 +30,7 @@ You will be asked a series of multiple choice questions about all things misandr
 ---
 The design for The Misandry Quiz is heavily influenced by this t-shirt, which I recieved as a birthday gift from a dear friend: 
 
-![a tishirt with a big pink heart on the front with 'Misandry' printed inside of it](file:///Users/claire/code/project1_trivia/assets/barbie_stuff/tee%20logo.jpg)
+![a tishirt with a big pink heart on the front with 'Misandry' printed inside of it](file:///Users/claire/code/project1_trivia/assets/barbie_stuff/tee_shirt_logo.jpg)
 
 The font on this shirt reminds me of one of my favorite childhood toys; more specifically, it brings to mind the font used for the Barbie brand:
 
