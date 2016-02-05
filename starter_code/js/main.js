@@ -151,54 +151,60 @@ function checkAnswer(selectedAnswer) {
     console.log("Incorrect");
     answer = false;
   }
+  showHideAnsImg(answer);
+  // selected = null;
+};
 
 /* SHOW IMAGE AFTER ANSWER *********************************/
 
-  showHideAnsImg(answer);
-};
-
 function showHideAnsImg(answer){
   if (questionNumber === 0) {
-    answer ? $('#correct1').show(5000).hide(5000) : $('#incorrect1').show(5000).hide(5000);
+    answer ? $('#correct1').fadeIn(1000).delay(2000).fadeOut(1000) : $('#incorrect1').fadeIn(1000).delay(2000).fadeOut(1000);
   } else if (questionNumber === 1) {
-    answer ? $('#correct2').show(5000).hide(5000) : $('#incorrect2').show(5000).hide(5000);
+    answer ? $('#correct2').fadeIn(1000).delay(2000).fadeOut(1000) : $('#incorrect2').fadeIn(1000).delay(2000).fadeOut(1000);
   } else if (questionNumber === 2) {
-    answer ? $('#correct3').show(5000).hide(5000) : $('#incorrect3').show(5000).hide(5000);
+    answer ? $('#correct3').fadeIn(1000).delay(2000).fadeOut(1000) : $('#incorrect3').fadeIn(1000).delay(2000).fadeOut(1000);
   } else if (questionNumber === 3) {
-    answer ? $('#correct1').show(5000).hide(5000) : $('#incorrect1').show(5000).hide(5000);
+    answer ? $('#correct4').fadeIn(1000).delay(2000).fadeOut(1000) : $('#incorrect4').fadeIn(1000).delay(2000).fadeOut(1000);
   } else if (questionNumber === 4) {
-    answer ? $('#correct2').show(5000).hide(5000) : $('#incorrect2').show(5000).hide(5000);
+    answer ? $('#correct1').fadeIn(1000).delay(2000).fadeOut(1000) : $('#incorrect1').fadeIn(1000).delay(2000).fadeOut(1000);
   } else if (questionNumber === 5) {
-    answer ? $('#correct3').show(5000).hide(5000) : $('#incorrect3').show(5000).hide(5000);
+    answer ? $('#correct2').fadeIn(1000).delay(2000).fadeOut(1000) : $('#incorrect2').fadeIn(1000).delay(2000).fadeOut(1000);
   } else if (questionNumber === 6) {
-    answer ? $('#correct1').show(5000).hide(5000) : $('#incorrect1').show(5000).hide(5000);
+    answer ? $('#correct3').fadeIn(1000).delay(2000).fadeOut(1000) : $('#incorrect3').fadeIn(1000).delay(2000).fadeOut(1000);
   } else if (questionNumber === 7) {
-    answer ? $('#correct2').show(5000).hide(5000) : $('#incorrect2').show(5000).hide(5000);
+    answer ? $('#correct4').fadeIn(1000).delay(2000).fadeOut(1000) : $('#incorrect4').fadeIn(1000).delay(2000).fadeOut(1000);
   } else if (questionNumber === 8) {
-    answer ? $('#correct3').show(5000).hide(5000) : $('#incorrect3').show(5000).hide(5000);
+    answer ? $('#correct1').fadeIn(1000).delay(2000).fadeOut(1000) : $('#incorrect1').fadeIn(1000).delay(2000).fadeOut(1000);
   } else if (questionNumber === 9) {
-    answer ? $('#correct1').show(5000).hide(5000) : $('#incorrect1').show(5000).hide(5000);
+    answer ? $('#correct2').fadeIn(1000).delay(2000).fadeOut(1000) : $('#incorrect2').fadeIn(1000).delay(2000).fadeOut(1000);
   } else if (questionNumber === 10) {
-    answer ? $('#correct2').show(5000).hide(5000) : $('#incorrect2').show(5000).hide(5000);
+    answer ? $('#correct3').fadeIn(1000).delay(2000).fadeOut(1000) : $('#incorrect3').fadeIn(1000).delay(2000).fadeOut(1000);
   } else if (questionNumber === 11) {
-    answer ? $('#correct3').show(5000).hide(5000) : $('#incorrect3').show(5000).hide(5000);
+    answer ? $('#correct4').fadeIn(1000).delay(2000).fadeOut(1000) : $('#incorrect4').fadeIn(1000).delay(2000).fadeOut(1000);
   }
 }
 
-
 /* CLICK 'SUBMIT' TO SUBMIT CHECKED ANSWER AND RUN LOTS OF FUNCTIONS! ****************/
+
+/*have to stop the submit function if a radio button isnt ticked***********/
 
 $("#submit").on("click", function(){
   console.log("working");
+  if (!selected) {
+    return; // return nothing. do nothing. stop the function. ignore this.
+  }
   checkAnswer(selected);
   questionNumber += 1;
   removeRadioButton();
+  $("#quizContainer").fadeOut(10).delay(3500).fadeIn(1000);
+  $(":button").fadeOut(10).delay(3500).fadeIn(1000)
   selected = undefined;
-if(questionNumber > 11){
-  winnerIs();
-} else {
-render();
-}
+  if(questionNumber > 11){
+    winnerIs();
+  } else {
+    render();
+  }
 });
 
 /* FUNCTION TO REMOVE SELECTED BUTTON WHEN THE NEXT QUESTION LOADS *****************/
@@ -210,9 +216,8 @@ function removeRadioButton() {
 /* CLICK START BUTTON PAGE TRANSITION *******************************/
 
 $("#start").on("click", function(evt) {
-  $("#title-container").addClass("hidden");
-  $("#quizContainer").removeClass("hidden");
-
+  $("#title-container").fadeOut(2000).addClass("hidden");
+  $("#quizContainer").fadeIn(2000).removeClass("hidden");
   $("#start").addClass("hidden");
 });
 
@@ -226,29 +231,18 @@ var restartGame = function() {
   location.reload(true);
 };
 
-/* CORRECT/INCORRECT IMAGES ****************************************************/
-
-function revealImage() {
-  $('#correct1').css('visibility', (score) ? 'visible' : 'hidden');
-  $('#correct2').css('visibility', (score > 5 && score < 8) ? 'visible' : 'hidden');
-  $('#correct3').css('visibility', (score > 9 && score < 12) ? 'visible' : 'hidden');
-  $('#incorrect1').css('visibility', (score > 2 && score ) ? 'visible' : 'hidden');
-  $('#incorrect2').css('visibility', (score > 9) ? 'visible' : 'hidden');
-  $('#incorrect3').css('visibility', (score > 14) ? 'visible' : 'hidden');
-};
-
 /* WINNER CATEGORY SCREEN ***********************************/
 
 var winnerIs = function(){
-if (score <= 12 && score >= 9) {
-  categoryNumber = 1;
-} else if (score < 9 && score >= 6) {
-  categoryNumber = 2;
-} else if (score < 6 && score >= 3) {
-  categoryNumber = 3;
-} else if (score < 3 && score >= 0) {
-  categoryNumber = 4;
-}
+  if (score <= 12 && score >= 9) {
+    categoryNumber = 1;
+  } else if (score < 9 && score >= 6) {
+    categoryNumber = 2;
+  } else if (score < 6 && score >= 3) {
+    categoryNumber = 3;
+  } else if (score < 3 && score >= 0) {
+    categoryNumber = 4;
+  }
   if (categoryNumber === 1){
     $("#quizContainer").addClass("hidden");
     // $("#winner-category").removeClass("hidden");
