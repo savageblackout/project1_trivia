@@ -29,7 +29,7 @@ You will be asked a series of multiple choice questions about all things misandr
 
 #Design Approach
 ---
-The design for Misandry..The Trivia Game! is heavily influenced by this t-shirt, which I recieved as a birthday gift from a dear friend: 
+The design for The Misandry Quiz is heavily influenced by this t-shirt, which I recieved as a birthday gift from a dear friend: 
 
 ![a tishirt with a big pink heart on the front with 'Misandry' printed inside of it](file:///Users/claire/code/Project01_MisandryTrivia/assets/barbie_stuff/tee%20logo.jpg)
 
@@ -52,9 +52,10 @@ Simply load the link in your preferred browser, follow the prompts, and enjoy!
 
 - Playing on a timer
 - Adding True/False questions
+- Adding a 'Lightning Round'
 
 
-## Check out my Trello Board w/ User Stories:
+## Check out my Trello Board with User Stories:
 [Link to User Stories and work flow!](https://trello.com/b/vB8o3tY8)
 ---
 
