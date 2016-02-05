@@ -12,42 +12,42 @@ h1 {
   text-shadow: 2px 2px #F707DB;
   }
 
-#header{
-  border-style: inset;
-  border-color: rgba(249, 230, 252, .5);
+#header {
+  box-shadow: 3px 3px 10px 5px #74F0F2;
   width: 500px;
   max-width: 90%;
   display: block;
   height: 100px;
   text-align: center;
-  margin: 0 auto;
+  margin: 10px auto;
+  padding-top: 15px;
   }
 
 #score {
   position: relative;
-  border-style: inset;
-  border-color: rgba(249, 230, 252, .5);
+  box-shadow: 3px 3px 10px 5px #74F0F2;
   width: 300px;
   height: 100px;
   font-family: Barbie;
   color: #74F0F2;
-  font-size: 35pt;
+  font-size: 25pt;
   left: 550px;
-  bottom: 76px;
+  bottom: 87px;
+  padding-top: 25px;
 }
 
 h2, h3 {
   text-align: center;
-  color: #380632;
+  color: #B800A8;
   font-family: Barbie;
   margin: 0 auto;
-  padding: 5px 5px;
+  padding: 10px 10px;
   }
 
 h2 {
   font-size: 30pt;
   margin: 0 auto;
-  padding: 5px 5px;
+  padding: 10px 10px;
   }
 
 h3 {
@@ -58,36 +58,35 @@ h3 {
 /*WHOLE CONTAINER (INCLUDING QUESTIONS AND OPTIONS)***************/
 
 #quizContainer {
-  border: 1px inset #380632;
   padding-bottom: 5px;
   padding-top: 20px;
   height: 500px;
   top: 50%;
-  margin: 0 auto;
+  margin: 5px auto;
   }
 
 /*QUESTION LIVES HERE ******************************/
 
 #questions {
-  border: 3px inset #380632;
+  box-shadow: 2px 2px 1px 5px #74F0F2;
   font-family: Barbie;
-  padding-bottom: 5px;
-  padding: 15px;
+  padding: 5px 5px;
   text-align: center;
-  color: #380632;
+  color: #B800A8;
   font-size: 25pt;
-  margin: 0 auto;
+  margin: 10px auto;
   }
 
 /* QUESTIONS AND OPTIONS ***********************/
 
 form {
-  border: 15px;
+  border: 5px;
   padding-top: 10px;
+  padding-left: 10px;
   float: left;
   width: 70%;
   margin-top: 30px;
-  color: #380632;
+  color: #B800A8;
   margin: 0 auto;
   }
 
@@ -96,7 +95,7 @@ form {
 #a {
   font-family: Barbie;
   font-size: 17pt;
-  border-style: solid;
+  box-shadow: 3px 3px 3px 3px #74F0F2;
   padding: 5px;
   width: 80%;
   clear: both;
@@ -105,16 +104,17 @@ form {
 #b {
   font-family: Barbie;
   font-size: 17pt;
-  border-style: solid;
+  box-shadow: 3px 3px 10px 5px #74F0F2;
   padding: 5px;
   width: 80%;
   clear: both;
   }
 
 #c {
+
   font-family: Barbie;
   font-size: 17pt;
-  border-style: solid;
+  box-shadow: 3px 3px 10px 5px #74F0F2;
   padding: 5px;
   width: 80%;
   clear: both;
@@ -123,7 +123,7 @@ form {
 #d {
   font-family: Barbie;
   font-size: 17pt;
-  border-style: solid;
+  box-shadow: 3px 3px 10px 5px #74F0F2;
   padding: 5px;
   width: 80%;
   clear: both;
@@ -241,6 +241,16 @@ form {
   right: 100px;
 }
 
+#correct12 {
+  padding-top: 40px;
+  max-width: 100%;
+  height: auto;
+  margin: 75px 417px;
+  position: absolute;
+  right: 100px;
+  bottom: 105px;
+  }
+
 /*INCORRECT**********************************/
 
 #incorrect1 {
@@ -344,11 +354,20 @@ form {
   position: absolute;
 }
 
+#incorrect12 {
+  margin-right: 10px;
+  float: right;
+  max-width: 100%;
+  height: auto;
+  margin: 75px 417px;
+  position: absolute;
+}
+
 /*WINNER PAGES WITH IMAGES *************************/
 
 #winnerCategory1 {
-  padding: 15px;
-  padding-top: 50px;
+  padding-bottom: 30px;
+  padding-top: 30px;
   height: 400px;
   top: 50%;
 }
@@ -363,8 +382,8 @@ form {
 }
 
 #winnerCategory2 {
-  padding: 15px;
-  padding-top: 50px;
+  padding-bottom: 30px;
+  padding-top: 30px;
   height: 400px;
   top: 50%;
 }
@@ -377,8 +396,8 @@ form {
 }
 
 #winnerCategory3 {
-  padding: 15px;
-  padding-top: 50px;
+  padding-bottom: 30px;
+  padding-top: 30px;
   height: 400px;
   top: 50%;
 }
@@ -391,8 +410,8 @@ form {
 }
 
 #winnerCategory4 {
-  padding: 15px;
-  padding-top: 50px;
+  padding-bottom: 30px;
+  padding-top: 30px;
   height: 400px;
   top: 50%;
 }
@@ -428,6 +447,14 @@ button {
   text-align: center;
   margin-bottom: 30px;
   margin-right: 15px;
+}
+
+#start {
+ margin-left: 5px;
+}
+
+#submit {
+ margin-left: 5px ;
 }
 
 .hidden {

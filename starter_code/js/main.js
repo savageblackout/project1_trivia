@@ -36,7 +36,7 @@ function checkAnswer(selectedAnswer) {
 var winnerIs = function() {
     var categoryNumber;
   $("#submit").addClass("hidden");
-  if (score > 10 && score >= 9) {
+  if (score > 9) {
     categoryNumber = 1;
   } else if (score < 9 && score >= 6) {
     categoryNumber = 2;
