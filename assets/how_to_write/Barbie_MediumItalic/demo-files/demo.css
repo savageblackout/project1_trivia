@@ -1,0 +1,22 @@
+body{margin:0em;padding:0em;font-family:Verdana,Arial;font-size:12em}
+#wrapper{width:1000em;margin-left:auto;margin-right:auto;border:1em solid #eeeeee;border-top:0}
+#title{float:left;width:680em;margin:20em 0 20em 20em;font-size:60em;white-space:nowrap;overflow:hidden}
+#logo{float:right;margin:25em 20em 20em 0}
+#logo img{border:0}
+#menu,#footer{background:#eeeeee}
+#menu ul{padding:0;margin:0}
+#menu li{list-style-type:none}
+#menu li a{padding:5em 20em 5em 20em;float:left;color:black;text-decoration:none;font-weight:bold}
+#menu li a:hover{background:#d7d7d7}
+#menu li.selected a{background:#002957;color:white}
+#content{padding:20em}
+#glyphs{float:left;margin-bottom:-20em !important}
+#glyphs .g{width:89em;float:left;text-align:center;padding:0 3em 0 3em;border-right:1em solid #eeeeee;white-space:nowrap;overflow:hidden;margin-bottom:20em;min-height:100em}
+.noborder{border:0 !important}
+#glyphs p{font-size:60em;padding:0;margin:10em 0 0 0}
+#footer {padding:5em 20em 5em 20em}
+#footer a{color:black}
+#copyright{float:left;white-space:nowrap;overflow:hidden;width:730em}
+#generated{float:right}
+#support{width:1000em;margin-left:auto;margin-right:auto;padding:5em 0 20em 40em;color:#9f9f9f}
+.clr{clear:both}

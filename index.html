@@ -6,174 +6,168 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
-
+  <link src="/assets/how_to_write/Barbie_MediumItalic/barbie.ttf" rel="stylesheet" type="text/css">
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="js/data.js"></script>
   <link rel="icon" href="assets/images/tab_icon.ico">
+  <!-- <meta name="viewport" content="width=device-width; initial-scale=1, maximum-scale=1"> -->
 </head>
 <body>
-  <h1 id="header">The Misandry Quiz
-    <div id="score" class="hidden">
+   <div class="wrapper">
+     <div class="header">
+       <h1 id="header">The Misandry Quiz</h1>
+       <div id="score" class="hidden"></div>
+     </div>
+    <div id="title-container" class="">
+      <h2>Do you often catch yourself wondering: 'how big of a misandrist am I based on a four-part category system?'</h2>
+      <h3>Now you have the opportunity to answer a series of questions about misandry that will place you in such a category!</h3>
+      <h3>What IS misandry anyways?!</h3>
+      <h3>"Misandry refers to the hatred of males, which Mens Rights Activists (MRAs) purport is a characteristic of every feminist, all females who don't succumb to attempts at seduction, and Western society at large."</h3>
+      <h2>Click the 'Start' button to begin!</h2>
     </div>
-  </h1>
-  <div id="title-container" class="">
-    <h2>Do you often catch yourself wondering: 'how big of a misandrist am I based on a four-part category system?'</h2>
-    <h3>Now you have the opportunity to answer a series of questions about misandry that will place you in such a category!</h3>
-    <h3>What IS misandry anyways?!</h3>
-    <h3>"Misandry refers to the hatred of males, which Mens Rights Activists (MRAs) purport is a characteristic of every feminist, all females who don't succumb to attempts at seduction, and Western society at large."</h3>
-    <h2>Click the 'Start' button to begin!</h2>
-  </div>
-  <div id="winnerCategory1" class="hidden">
-    <h1> You are an Official Mens Rights Activist!!</h1>
-    <h2> Wow! You strike fear in the hearts of feminists everywhere. Time to look up the local MRA chapter, bro!</h2>
-    <img src="assets/you_win_category_1/fedora.gif">
-  </div>
-  <div id="winnerCategory2" class="hidden">
-    <h1> You are a Frequent <a target="_blank" href="https://www.reddit.com/r/TheRedPill/"> 'Red Pill' Reddit Contributor</a></h1>
-    <h2> Well done! You know your stuff, but you could stand to do some studying. You may also need a hug!</h2>
-    <img src="assets/you_win_category_2/redpill.gif">
-  </div>
-  <div id="winnerCategory3" class="hidden">
-    <h1> You are a Female Chauvanist.</h1>
-    <h2> Whoa! Pump the brakes buddy...get to know the male struggle.</h2>
-    <img src="assets/you_win_category_3/yellow_power_ranger.gif">
-  </div>
-  <div id="winnerCategory4" class="hidden">
-    <h1> There's...no easy way to say this...You are a FemiNazi</h1>
-    <h2> Did you guys just feel that? The hair on the back of my neck is standing on end...oh wait, its just you.</h2>
-    <img src="assets/you_win_category_4/feministbey.gif">
-  </div>
-  <div id="images">
-    <div id="correct1" style="display: none">
-      <h1>Correct!</h1>
-      <img src="assets/you_win/brent_rambo.gif">
+    <div id="winnerCategory1" class="hidden">
+      <h1> You are an Official Mens Rights Activist!!</h1>
+      <h2> Wow! You strike fear in the hearts of feminists everywhere. Time to look up the local MRA chapter, bro!</h2>
+      <img src="assets/you_win_category_1/fedora.gif">
     </div>
-    <div id="correct2" style="display: none">
-      <h1>Correct!</h1>
-      <img src="assets/you_win/keanu.gif">
+    <div id="winnerCategory2" class="hidden">
+      <h1> You are a Frequent <a target="_blank" href="https://www.reddit.com/r/TheRedPill/"> 'Red Pill' Reddit Contributor</a></h1>
+      <h2> Well done! You know your stuff, but you could stand to do some studying. You may also need a hug!</h2>
+      <img src="assets/you_win_category_2/redpill.gif">
     </div>
-    <div id="correct3" style="display: none">
-      <h1> Correct!</h1>
-      <img src="assets/you_win/max.gif">
+    <div id="winnerCategory3" class="hidden">
+      <h1> You are a Female Chauvanist.</h1>
+      <h2> Whoa! Pump the brakes buddy...get to know the male struggle.</h2>
+      <img src="assets/you_win_category_3/yellow_power_ranger.gif">
     </div>
-    <div id="correct4" style="display: none">
-      <h1> Correct!</h1>
-      <img src="assets/you_win/troy.gif">
+    <div id="winnerCategory4" class="hidden">
+      <h1> There's...no easy way to say this...You are a FemiNazi</h1>
+      <h2> Did you guys just feel that? The hair on the back of my neck is standing on end...oh wait, its just you.</h2>
+      <img src="assets/you_win_category_4/feministbey.gif">
     </div>
-    <div id="correct5" style="display: none">
-      <h1>Correct!</h1>
-      <img src="assets/you_win/brent_rambo.gif">
+    <div id="images" class="question-images">
+      <div id="correct1" style="display: none">
+        <h1>Correct!</h1>
+        <img src="assets/you_win/brent_rambo.gif">
+      </div>
+      <div id="correct2" style="display: none">
+        <h1>Correct!</h1>
+        <img src="assets/you_win/keanu.gif">
+      </div>
+      <div id="correct3" style="display: none">
+        <h1> Correct!</h1>
+        <img src="assets/you_win/max.gif">
+      </div>
+      <div id="correct4" style="display: none">
+        <h1> Correct!</h1>
+        <img src="assets/you_win/troy.gif">
+      </div>
+      <div id="correct5" style="display: none">
+        <h1>Correct!</h1>
+        <img src="assets/you_win/brent_rambo.gif">
+      </div>
+      <div id="correct6" style="display: none">
+        <h1>Correct!</h1>
+        <img src="assets/you_win/keanu.gif">
+      </div>
+      <div id="correct7" style="display: none">
+        <h1> Correct!</h1>
+        <img src="assets/you_win/max.gif">
+      </div>
+      <div id="correct8" style="display: none">
+        <h1> Correct!</h1>
+        <img src="assets/you_win/troy.gif">
+      </div>
+      <div id="correct9" style="display: none">
+        <h1>Correct!</h1>
+        <img src="assets/you_win/brent_rambo.gif">
+      </div>
+      <div id="correct10" style="display: none">
+        <h1>Correct!</h1>
+        <img src="assets/you_win/keanu.gif">
+      </div>
+      <div id="correct11" style="display: none">
+        <h1>Correct!</h1>
+        <img src="assets/you_win/keanu.gif">
+      </div>
+      <div id="incorrect1" style="display: none">
+        <h1>Incorrect!</h1>
+        <img src="assets/you_suck/ms_minaj.gif">
+      </div>
+      <div id="incorrect2" style="display: none">
+        <h1>Incorrect!</h1>
+        <img src="assets/you_suck/ursula.laughing.gif">
+      </div>
+      <div id="incorrect3" style="display: none">
+        <h1>Incorrect!</h1>
+        <img src="assets/you_suck/k_wiig.gif">
+      </div>
+      <div id="incorrect4" style="display: none">
+        <h1>Incorrect!</h1>
+        <img src="assets/you_suck/ri.gif">
+      </div>
+      <div id="incorrect5" style="display: none">
+        <h1>Incorrect!</h1>
+        <img src="assets/you_suck/ms_minaj.gif">
+      </div>
+      <div id="incorrect6" style="display: none">
+        <h1>Incorrect!</h1>
+        <img src="assets/you_suck/ursula.laughing.gif">
+      </div>
+      <div id="incorrect7" style="display: none">
+        <h1>Incorrect!</h1>
+        <img src="assets/you_suck/k_wiig.gif">
+      </div>
+      <div id="incorrect8" style="display: none">
+        <h1>Incorrect!</h1>
+        <img src="assets/you_suck/ri.gif">
+      </div>
+      <div id="incorrect9" style="display: none">
+        <h1>Incorrect!</h1>
+        <img src="assets/you_suck/ms_minaj.gif">
+      </div>
+      <div id="incorrect10" style="display: none">
+        <h1>Incorrect!</h1>
+        <img src="assets/you_suck/ursula.laughing.gif">
+      </div>
+      <div id="incorrect11" style="display: none">
+        <h1>Incorrect!</h1>
+        <img src="assets/you_suck/k_wiig.gif">
+      </div>
     </div>
-    <div id="correct6" style="display: none">
-      <h1>Correct!</h1>
-      <img src="assets/you_win/keanu.gif">
+    <div id="quizContainer" class="hidden">
+      <div id="questions"></div>
+      <form>
+        <div id="a" class="answer-option">
+          <label>
+            <input type="radio" name="answer" value="a">
+            <span></span>
+          </label>
+        </div><br>
+        <div id="b" class="answer-option">
+          <label>
+            <input type="radio" name="answer" value="b">
+            <span></span>
+          </label>
+        </div><br>
+        <div id="c" class="answer-option">
+          <label>
+            <input type="radio" name="answer" value="c">
+            <span></span>
+          </label>
+        </div><br>
+        <div id="d" class="answer-option">
+          <label>
+            <input type="radio" name="answer" value="d">
+            <span></span>
+          </label>
+        </div><br>
+      </form>
     </div>
-    <div id="correct7" style="display: none">
-      <h1> Correct!</h1>
-      <img src="assets/you_win/max.gif">
-    </div>
-    <div id="correct8" style="display: none">
-      <h1> Correct!</h1>
-      <img src="assets/you_win/troy.gif">
-    </div>
-    <div id="correct9" style="display: none">
-      <h1>Correct!</h1>
-      <img src="assets/you_win/brent_rambo.gif">
-    </div>
-    <div id="correct10" style="display: none">
-      <h1>Correct!</h1>
-      <img src="assets/you_win/keanu.gif">
-    </div>
-    <div id="correct11" style="display: none">
-      <h1>Correct!</h1>
-      <img src="assets/you_win/keanu.gif">
-    </div>
-    <!-- <div id="correct12" style="display: none">
-      <h1>Correct!</h1>
-      <img src="assets/you_win/brent_rambo.gif">
-    </div> -->
-    <div id="incorrect1" style="display: none">
-      <h1>Incorrect!</h1>
-      <img src="assets/you_suck/ms_minaj.gif">
-    </div>
-    <div id="incorrect2" style="display: none">
-      <h1>Incorrect!</h1>
-      <img src="assets/you_suck/ursula.laughing.gif">
-    </div>
-    <div id="incorrect3" style="display: none">
-      <h1>Incorrect!</h1>
-      <img src="assets/you_suck/k_wiig.gif">
-    </div>
-    <div id="incorrect4" style="display: none">
-      <h1>Incorrect!</h1>
-      <img src="assets/you_suck/ri.gif">
-    </div>
-    <div id="incorrect5" style="display: none">
-      <h1>Incorrect!</h1>
-      <img src="assets/you_suck/ms_minaj.gif">
-    </div>
-    <div id="incorrect6" style="display: none">
-      <h1>Incorrect!</h1>
-      <img src="assets/you_suck/ursula.laughing.gif">
-    </div>
-    <div id="incorrect7" style="display: none">
-      <h1>Incorrect!</h1>
-      <img src="assets/you_suck/k_wiig.gif">
-    </div>
-    <div id="incorrect8" style="display: none">
-      <h1>Incorrect!</h1>
-      <img src="assets/you_suck/ri.gif">
-    </div>
-    <div id="incorrect9" style="display: none">
-      <h1>Incorrect!</h1>
-      <img src="assets/you_suck/ms_minaj.gif">
-    </div>
-    <div id="incorrect10" style="display: none">
-      <h1>Incorrect!</h1>
-      <img src="assets/you_suck/ursula.laughing.gif">
-    </div>
-    <div id="incorrect11" style="display: none">
-      <h1>Incorrect!</h1>
-      <img src="assets/you_suck/k_wiig.gif">
-    </div>
-    <!-- <div id="incorrect12" style="display: none">
-      <h1>Incorrect!</h1>
-      <img src="assets/you_suck/ms_minaj.gif">
-    </div> -->
-  </div>
-  <div id="quizContainer" class="hidden">
-    <div id="questions"></div>
-    <form>
-      <div id="a">
-        <label>
-          <input type="radio" name="answer" value="a">
-          <span></span>
-        </label>
-      </div><br>
-      <div id="b">
-        <label>
-          <input type="radio" name="answer" value="b">
-          <span></span>
-        </label>
-      </div><br>
-      <div id="c">
-        <label>
-          <input type="radio" name="answer" value="c">
-          <span></span>
-        </label>
-      </div><br>
-      <div id="d">
-        <label>
-          <input type="radio" name="answer" value="d">
-          <span></span>
-        </label>
-      </div><br>
-    </form>
-  </div>
   <button id="start" class="">START</button>
   <button id="submit" class="hidden">SUBMIT</button>
   <button id="restart" class="">ReSTART</button>
-
+    </div>
   <script src="js/main.js"></script>
 </body>
 </html>

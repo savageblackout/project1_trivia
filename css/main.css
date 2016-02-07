@@ -1,81 +1,102 @@
 body {
   background-image: url(../assets/images/background.jpg);
   background-size: cover;
-  }
+}
+
+.wrapper {
+  padding: 0 10px;
+  font-family: 'Barbie';
+}
+
+/*for the font:*/
+
+body{
+  margin:0px;padding:0px;font-family:Verdana,Arial;font-size:12px}
+  #wrapper{width:1000px;margin-left:auto;margin-right:auto;border:1px solid #eeeeee;border-top:0}
+  #title{float:left;width:680px;margin:20px 0 20px 20px;font-size:60px;white-space:nowrap;overflow:hidden}
+  #logo{float:right;margin:25px 20px 20px 0}
+  #logo img{border:0}
+  #menu,#footer{background:#eeeeee}
+  #menu ul{padding:0;margin:0}
+  #menu li{list-style-type:none}
+  #menu li a{padding:5px 20px 5px 20px;float:left;color:black;text-decoration:none;font-weight:bold}
+  #menu li a:hover{background:#d7d7d7}
+  #menu li.selected a{background:#002957;color:white}
+  #content{padding:20px}
+  #glyphs{float:left;margin-bottom:-20px !important}
+  #glyphs .g{width:89px;float:left;text-align:center;padding:0 3px 0 3px;border-right:1px solid #eeeeee;white-space:nowrap;overflow:hidden;margin-bottom:20px;min-height:100px}
+  .noborder{border:0 !important}
+  #glyphs p{font-size:60px;padding:0;margin:10px 0 0 0}
+  #footer {padding:5px 20px 5px 20px}
+  #footer a{color:black}
+  #copyright{float:left;white-space:nowrap;overflow:hidden;width:730px}
+  #generated{float:right}
+  #support{width:1000px;margin-left:auto;margin-right:auto;padding:5px 0 20px 40px;color:#9f9f9f}
+  .clr{clear:both
+}
+
 /* HEADER STYLES************************************/
 h1 {
   text-align: center;
   margin: 0 auto;
   color: #74F0F2;
-  font-family: Barbie;
   font-size: 50pt;
   text-shadow: 2px 2px #F707DB;
-  }
+}
 
-#header {
+.header {
   box-shadow: 3px 3px 10px 5px #74F0F2;
-  width: 500px;
-  max-width: 90%;
-  display: block;
-  height: 100px;
+  width: 700px;
+  min-height: 100px;
   text-align: center;
   margin: 10px auto;
   padding-top: 15px;
-  }
+}
 
 #score {
-  position: relative;
-  box-shadow: 3px 3px 10px 5px #74F0F2;
-  width: 300px;
-  height: 100px;
-  font-family: Barbie;
+  text-shadow: 2px 2px #F707DB;
   color: #74F0F2;
   font-size: 25pt;
-  left: 550px;
-  bottom: 87px;
-  padding-top: 25px;
 }
 
 h2, h3 {
   text-align: center;
   color: #B800A8;
-  font-family: Barbie;
   margin: 0 auto;
   padding: 10px 10px;
-  }
+}
 
 h2 {
   font-size: 30pt;
   margin: 0 auto;
   padding: 10px 10px;
-  }
+}
 
 h3 {
   font-size: 25pt;
   margin: 0 auto;
-  }
+}
 
 /*WHOLE CONTAINER (INCLUDING QUESTIONS AND OPTIONS)***************/
 
 #quizContainer {
   padding-bottom: 5px;
   padding-top: 20px;
-  height: 500px;
-  top: 50%;
+  min-height: 500px;
   margin: 5px auto;
-  }
+}
 
 /*QUESTION LIVES HERE ******************************/
 
 #questions {
   box-shadow: 2px 2px 1px 5px #74F0F2;
-  font-family: Barbie;
   padding: 5px 5px;
   text-align: center;
   color: #B800A8;
   font-size: 25pt;
   margin: 10px auto;
-  }
+}
+
 
 /* QUESTIONS AND OPTIONS ***********************/
 
@@ -87,286 +108,32 @@ form {
   width: 70%;
   margin-top: 30px;
   color: #B800A8;
-  margin: 0 auto;
-  }
+}
 
 /* BOXES CONTAINING OPTIONS HERE ********************/
 
 
-#a:hover, #b:hover, #c:hover, #d:hover {
+.answer-option:hover {
   opacity: 0.5;
   background-color: #FAF5F9;
 }
 
-#a {
-  font-family: Barbie;
+.answer-option {
   font-size: 17pt;
   box-shadow: 3px 3px 3px 3px #74F0F2;
   padding: 5px;
   width: 80%;
   clear: both;
-  }
-
-#b {
-  font-family: Barbie;
-  font-size: 17pt;
-  box-shadow: 3px 3px 10px 5px #74F0F2;
-  padding: 5px;
-  width: 80%;
-  clear: both;
-  }
-
-#c {
-
-  font-family: Barbie;
-  font-size: 17pt;
-  box-shadow: 3px 3px 10px 5px #74F0F2;
-  padding: 5px;
-  width: 80%;
-  clear: both;
-  }
-
-#d {
-  font-family: Barbie;
-  font-size: 17pt;
-  box-shadow: 3px 3px 10px 5px #74F0F2;
-  padding: 5px;
-  width: 80%;
-  clear: both;
-  }
+}
 
 /* POST-ANSWER GIFS*************************/
 
-/* CORRECT*******************/
-
- #correct1 {
-  padding-top: 40px;
-  max-width: 100%;
-  height: auto;
-  margin: 75px 417px;
+.question-images {
+  width: 600;
+  height: 300;
+  margin: 0 auto;
   position: absolute;
-  right: 100px;
-  bottom: 105px;
-  }
-
-#correct2 {
-  margin-right: 10px;
-  float: right;
-  max-width: 100%;
-  height: auto;
-  margin: 75px 420px;
-  position: absolute;
-  right: 100px;
-}
-
-#correct3 {
-  margin-right: 10px;
-  float: right;
-  max-width: 100%;
-  height: auto;
-  margin: 75px 420px;
-  position: absolute;
-}
-
-#correct4 {
-  margin-right: 10px;
-  float: right;
-  max-width: 100%;
-  height: auto;
-  margin: 75px 420px;
-  position: absolute;
-}
-
-#correct5 {
-  padding-top: 40px;
-  float: right;
-  max-width: 100%;
-  height: auto;
-  margin: 75px 417px;
-  position: absolute;
-  right: 100px;
-
-  }
-
-#correct6 {
-  margin-right: 10px;
-  float: right;
-  max-width: 100%;
-  height: auto;
-  margin: 75px 420px;
-  position: absolute;
-  right: 100px;
-}
-
-#correct7 {
-  margin-right: 10px;
-  float: right;
-  max-width: 100%;
-  height: auto;
-  margin: 75px 420px;
-  position: absolute;
-}
-
-#correct8 {
-  margin-right: 10px;
-  float: right;
-  max-width: 100%;
-  height: auto;
-  margin: 75px 420px;
-  position: absolute;
-}
-
-#correct9 {
-  padding-top: 40px;
-  float: right;
-  max-width: 100%;
-  height: auto;
-  margin: 75px 417px;
-  position: absolute;
-  bottom: 100px;
-  right: 100px;
-  }
-
-#correct10 {
-  margin-right: 10px;
-  float: right;
-  max-width: 100%;
-  height: auto;
-  margin: 75px 420px;
-  position: absolute;
-  right: 100px;
-}
-
-#correct11 {
-  margin-right: 10px;
-  float: right;
-  max-width: 100%;
-  height: auto;
-  margin: 75px 420px;
-  position: absolute;
-  right: 100px;
-}
-
-#correct12 {
-  padding-top: 40px;
-  max-width: 100%;
-  height: auto;
-  margin: 75px 417px;
-  position: absolute;
-  right: 100px;
-  bottom: 105px;
-  }
-
-/*INCORRECT**********************************/
-
-#incorrect1 {
-  margin-right: 10px;
-  float: right;
-  max-width: 100%;
-  height: auto;
-  margin: 75px 417px;
-  position: absolute;
-}
-
-#incorrect2 {
-  margin-right: 10px;
-  float: right;
-  max-width: 100%;
-  height: auto;
-  margin: 75px 420px;
-  position: absolute;
-}
-
-#incorrect3 {
-  margin-right: 10px;
-  float: right;
-  max-width: 100%;
-  height: auto;
-  left: 80px;
-  margin: 75px 420px;
-  position: absolute;
-}
-
-#incorrect4 {
-  margin-right: 10px;
-  float: right;
-  max-width: 100%;
-  height: auto;
-  margin: 75px 400px;
-  position: absolute;
-}
-
-#incorrect5 {
-  margin-right: 10px;
-  float: right;
-  max-width: 100%;
-  height: auto;
-  margin: 75px 417px;
-  position: absolute;
-}
-
-#incorrect6 {
-  margin-right: 10px;
-  float: right;
-  max-width: 100%;
-  height: auto;
-  margin: 75px 420px;
-  position: absolute;
-}
-
-#incorrect7 {
-  margin-right: 10px;
-  float: right;
-  max-width: 100%;
-  height: auto;
-  margin: 75px 420px;
-  left: 80px;
-  position: absolute;
-}
-
-#incorrect8 {
-  margin-right: 10px;
-  float: right;
-  max-width: 100%;
-  height: auto;
-  margin: 75px 400px;
-  position: absolute;
-}
-
-#incorrect9 {
-  margin-right: 10px;
-  float: right;
-  max-width: 100%;
-  height: auto;
-  margin: 75px 417px;
-  position: absolute;
-}
-
-#incorrect10 {
-  margin-right: 10px;
-  float: right;
-  max-width: 100%;
-  height: auto;
-  margin: 75px 420px;
-  position: absolute;
-}
-
-#incorrect11 {
-  margin-right: 10px;
-  float: right;
-  max-width: 100%;
-  height: auto;
-  margin: 75px 420px;
-  position: absolute;
-}
-
-#incorrect12 {
-  margin-right: 10px;
-  float: right;
-  max-width: 100%;
-  height: auto;
-  margin: 75px 417px;
-  position: absolute;
+  right: 500px;
 }
 
 /*WINNER PAGES WITH IMAGES *************************/

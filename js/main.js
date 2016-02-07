@@ -13,6 +13,19 @@ var restartGame = function() {
   window.location.reload(true);
 };
 
+/* IMAGES FOR HI RES SCREENS************************************/
+
+$(document).ready(function(){
+  if (window.devicePixelRatio > 1) {
+    var lowresImages = $('img');
+    images.each(function(i) {
+      var lowres = $(this).attr('src');
+      var highres = lowres.replace(".", "@2x.");
+      $(this).attr('src', highres);
+    });
+   }
+});
+
 /* THIS CHECKS IF THE CLICKED ANSWER IS CORRECT ************************/
 
 function checkAnswer(selectedAnswer) {
