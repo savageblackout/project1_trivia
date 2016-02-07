@@ -6,7 +6,7 @@
 
 Be the delight of every dinner party as you dazzle guests with your deep and intimate knowledge of the hatred of males; which Mens Rights Activists (MRAs) purport is a characteristic of every feminist, all females who don't succumb to attempts at seduction, and Western society at large. 
 
-![Uhura has to check Scottie](http://i.imgur.com/RpgnIoc.gifv)
+![Uhura has to check Scottie](https://s-media-cache-ak0.pinimg.com/originals/c3/33/fb/c333fb83122111d2cfeb093d386a9640.gif)
 
 
 ##How does it all work?!
@@ -42,7 +42,7 @@ The color pallet and font informed all of the design choices; from the backgroun
 The use of memes and gifs is a reflection of my insterests and sense of humor. Who doesnt like a good 'Deal With It Dog', amirite?
 
 
-![Deal With It Dog meme](http://i.imgur.com/LxM4EN3.gifv)
+![Deal With It Dog meme](http://i1.kym-cdn.com/entries/icons/original/000/002/686/Deal_with_it_dog_gif.gif)
 
 
 #Installation Instructions
