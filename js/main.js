@@ -119,6 +119,7 @@ var pageRenderImg = function() {
   removeRadioButton();
   $("#quizContainer").fadeOut(1).delay(3500).fadeIn(1000);
   $(":button").fadeOut(1).delay(3500).fadeIn(1000);
+
 }
 
 var runWinnerFunc = function() {
