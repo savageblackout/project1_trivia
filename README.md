@@ -14,7 +14,8 @@ Be the delight of every dinner party as you dazzle guests with your deep and int
 You will be asked a series of multiple choice questions about all things misandry, after which point you will receive your score- what category do you fall into;
 
 - Are you a full-on FemiNazi? 
-- An Official Mens Right Activist? 
+- An Official Mens Right Activist?
+- A frequent 'Red Pill' Reddit contributor? 
 - Or perhaps a Female Chauvanist?
 
 

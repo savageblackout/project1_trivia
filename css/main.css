@@ -1,11 +1,11 @@
 body {
   background-image: url(../assets/images/background.jpg);
-  background-size: cover;
+  background-size: cover !important;
 }
 
 .wrapper {
   padding: 0 10px;
-  font-family: 'Barbie';
+  font-family: 'Barbie', 'Barbie', 'barbie';
 }
 
 /*for the font:*/
@@ -128,11 +128,23 @@ form {
 /* POST-ANSWER GIFS*************************/
 
 .question-images {
-  width: 600;
-  height: 300;
   margin: 0 auto;
-  position: absolute;
-  /*right: 500px;*/
+  position: relative;
+  left: 0%;
+
+}
+
+.question-images img {
+  display: block;
+  max-width: 600px;
+  max-height: 300px;
+  margin: 0 auto;
+
+}
+
+.question-images h1 {
+/*  text-align: left;
+*/  display: block;
 }
 
 /*WINNER PAGES WITH IMAGES *************************/
@@ -231,5 +243,9 @@ button {
 
 .hidden {
   display: none;
+}
+
+#images {
+  height: 0;
 }
 
