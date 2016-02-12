@@ -76,6 +76,8 @@ var winnerIs = function() {
 /* SHOW IMAGE AFTER ANSWER *********************************/
 
 function flashElement(el) {
+
+  $(".question-images").removeClass("hidden");
   el.fadeIn(1000).delay(2000).fadeOut(1000);
 }
 

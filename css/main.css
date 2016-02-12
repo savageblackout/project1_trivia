@@ -128,16 +128,17 @@ form {
 /* POST-ANSWER GIFS*************************/
 
 .question-images {
-  width: 600px;
-  height: 300px;
   margin: 0 auto;
   position: relative;
-  left: 200px;
-  right: 100px;
+  left: 0%;
+
 }
 
 .question-images img {
   display: block;
+  max-width: 600px;
+  max-height: 300px;
+  margin: 0 auto;
 
 }
 
@@ -242,5 +243,9 @@ button {
 
 .hidden {
   display: none;
+}
+
+#images {
+  height: 0;
 }
 
